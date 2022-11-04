@@ -1,0 +1,29 @@
+name: lev_ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cython
+  - distributed
+  - matplotlib
+  - tensorflow
+  - numba
+  - xgboost
+  - pandas
+  - pillow
+  - memory_profiler
+  - line_profiler
+  - falcon
+  - scikit-learn
+  - seaborn
+  - keras
+  - plotly
+  - scipy
+  - numpy
+  - boto
+  - networkx
+  - scikit-image
+  - python==3.10
+  - jupyter
+  - tqdm
+prefix: C:\Users\sfrie\miniconda3\envs\lev_ml
