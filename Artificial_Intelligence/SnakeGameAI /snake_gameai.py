@@ -36,7 +36,7 @@ class SnakeGameAI:
         self.h=h
         #init display
         self.display = pygame.display.set_mode((self.w,self.h))
-        pygame.display.set_caption('SnakeAi by Shua Friedman and Dovid Sparzadeh')
+        pygame.display.set_caption('SnakeAi by Shua Friedman')
         #add a count in the corner keeping track of which number round we are in        
         self.clock = pygame.time.Clock()
         #init game state

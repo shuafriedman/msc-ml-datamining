@@ -5,10 +5,11 @@ from collections import deque
 from snake_gameai import SnakeGameAI,Direction,Point,BLOCK_SIZE
 from model import NN,QTrainer
 from Helper import plot
+import pygame
 MAX_MEMORY = 100_000 #max memory size for deque
 BATCH_SIZE = 1000
 LR = 0.001
-#hi
+
 class Agent:
     def __init__(self):
         self.n_game = 0
