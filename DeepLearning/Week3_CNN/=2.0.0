@@ -1,0 +1,12 @@
+Requirement already satisfied: keras==2.11.0 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (2.11.0)
+Requirement already satisfied: tensorflow in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (2.10.0)
+Requirement already satisfied: gast<=0.4.0,>=0.2.1 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (0.4.0)
+Requirement already satisfied: tensorflow-estimator<2.11,>=2.10.0 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (2.10.0)
+Requirement already satisfied: grpcio<2.0,>=1.24.3 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (1.47.1)
+Requirement already satisfied: typing-extensions>=3.6.6 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (4.4.0)
+Requirement already satisfied: setuptools in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (65.5.0)
+Requirement already satisfied: flatbuffers>=2.0 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (2.0)
+Requirement already satisfied: termcolor>=1.1.0 in /home/shua/miniconda3/envs/lev_ml/lib/python3.10/site-packages (from tensorflow) (2.1.0)
+Collecting tensorflow
+  Downloading tensorflow-2.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (585.9 MB)
+     ━━━━━━━━━━━━━                           199.3/585.9 MB 5.7 MB/s eta 0:01:08
