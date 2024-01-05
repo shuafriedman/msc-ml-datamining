@@ -1,0 +1,4 @@
+Future ideas:
+1) Gather more data to have full dispersion of zip codes, to be able to do aggregations (like mean price per zip code)
+
+2) 
