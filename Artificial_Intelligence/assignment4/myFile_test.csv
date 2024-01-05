@@ -1,11 +1,3 @@
-col1,col2,col3,tag	
-0,1,2,F
-1,5,6,F
-1,40,1,M
-2,2,2,F
-0,1,20,M
-1,5,6,F
-1,4,1,F
-2,22,2,M
-2,23,2,M
-2,24,2,M
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c3fa346852b019590a31339ead877db941d6be9754f252433a28e3e002f049a
+size 105
