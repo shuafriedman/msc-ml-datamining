@@ -1,0 +1,10 @@
+1) pcregrep --color 0[0-9]-.* input.txt
+2) pcregrep --color '(?<=\")[a-zA-Z]+' input.txt    (Performs a lookbehind-postive for the quotations)
+pcregrep --colour -v @.*\.com input.txt3) pcregrep --color .*[0-9]$ input.txt
+4) pcregrep --color \\t.*(\\.com|\\.il) input.txt
+5) pcregrep --color '(?<=\")[a-zA-Z ]{7,}' input.txt
+6) pcregrep --color '\t[a-zA-Z ]{4,5}@.+\t' input.txt
+7) pcregrep --color \\t[^@]+\\t input.txt
+8) perl -pe 's/\w+(?=@)/<name>/g' input.txt
+9) perl -pe 's/perl -pe 's/^(\"\w+)+(\t)/\1\"/g' input.txt
+10) 

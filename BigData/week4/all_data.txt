@@ -1,0 +1,4944 @@
+DangerHiptop	70964
+
+DiamondRioPMP300	70964
+
+EngelbartMouse	70964
+
+Eye-Fi	70964
+
+HamiltonPulsar	70964
+
+IomegaZipDrive	70964
+
+PentaxK1000	70964
+
+AsusEeePC700	9138
+
+DysonAirMultiplier	9138
+
+FisherAG7SpacePen	9138
+
+KodakInstamatic100	9138
+
+MicroSD	9138
+
+NikonF	9138
+
+RadioShackTRS-80Model100	9138
+
+SteriPEN	9138
+
+Bell103	77886
+
+Breathalyzer	77886
+
+MusicGremlinWi-FiMP3Player	77886
+
+Pedometer	77886
+
+PolaroidSX-70	77886
+
+SonyBetamovieBMC-100P	77886
+
+Zippo	77886
+
+AmazonKindle	41600
+
+EpsonHX-20	41600
+
+Eye-Fi	41600
+
+NintendoGameBoy	41600
+
+PanasonicDVD-L10	41600
+
+SonyBetamovieBMC-100P	41600
+
+AmazonKindle	50487
+
+BlackBerry6210	50487
+
+DiamondRioPMP300	50487
+
+EpsonHX-20	50487
+
+FujifilmQuickSnapDisposableCamera	50487
+
+HamiltonPulsar	50487
+
+NintendoGameBoy	50487
+
+SonyWatchman	50487
+
+TexasInstrumentsSR-10	50487
+
+AppleAirPort	79246
+
+AtariLynx	79246
+
+CanonEOS5DMarkII	79246
+
+DiskOnKey	79246
+
+HamiltonPulsar	79246
+
+MusicGremlinWi-FiMP3Player	79246
+
+SmokeDetector	79246
+
+Velcro	79246
+
+ZenithSpaceCommand	79246
+
+AmazonKindle	44468
+
+AppleAirPort	44468
+
+AsusEeePC700	44468
+
+Black&DeckerCordlessElectricDrill	44468
+
+BroxodentElectricToothbrush	44468
+
+HamiltonPulsar	44468
+
+Pedometer	44468
+
+RadioShackTRS-80Model100	44468
+
+RegencyTR-1	44468
+
+Velcro	44468
+
+DigitalThermometer	14312
+
+DiskOnKey	14312
+
+FujifilmQuickSnapDisposableCamera	14312
+
+Lithium-IonBatteries	14312
+
+NikonF	14312
+
+RegencyTR-1	14312
+
+Speak&Spell	14312
+
+TiVo	14312
+
+Eye-Fi	73805
+
+FisherAG7SpacePen	73805
+
+MattelElectronicsFootball	73805
+
+ArchosGmini400	50557
+
+AudioHighwayListenUp	50557
+
+BlackBerry6210	50557
+
+ConnectixQuickCam	50557
+
+Flip	50557
+
+Heart-RateMonitor	50557
+
+Lithium-IonBatteries	50557
+
+PanasonicDVD-L10	50557
+
+Pedometer	50557
+
+ArchosGmini400	28599
+
+BellsouthIBMSimon	28599
+
+CreditCard	28599
+
+EpsonHX-20	28599
+
+KodakEasyShareOne	28599
+
+LegoMindstorms1.0	28599
+
+MagellanNAV1000	28599
+
+MotorolaRazrV3	28599
+
+PolaroidSX-70	28599
+
+RegencyTR-1	28599
+
+iRobotRoomba	28599
+
+BellsouthIBMSimon	42075
+
+HamiltonPulsar	42075
+
+LogitechHarmony	42075
+
+RegencyTR-1	42075
+
+AppleAirPort	50882
+
+BellsouthIBMSimon	50882
+
+Breathalyzer	50882
+
+DiskOnKey	50882
+
+DysonAirMultiplier	50882
+
+ElectricRazor	50882
+
+GRiDCompass1101	50882
+
+GenicaGN803Tavarua	50882
+
+MotorolaDynaTAC8000x	50882
+
+PentaxK1000	50882
+
+SonyWatchman	50882
+
+TheClapper	50882
+
+AtariLynx	22255
+
+AudioHighwayListenUp	22255
+
+BluetoothHeadset	22255
+
+Breathalyzer	22255
+
+MattelElectronicsFootball	22255
+
+MicroSD	22255
+
+OpticalMedia	22255
+
+PalmPilot1000	22255
+
+PanasonicDVD-L10	22255
+
+RadioShackTRS-80Model100	22255
+
+iRobotRoomba	22255
+
+BoseNoise-CancelingHeadphones	98590
+
+DiamondRioPMP300	98590
+
+Heart-RateMonitor	98590
+
+MotorolaDynaTAC8000x	98590
+
+TexasInstrumentsSR-10	98590
+
+ApplePowerBook100	33061
+
+AudioHighwayListenUp	33061
+
+BellsouthIBMSimon	33061
+
+Black&DeckerCordlessElectricDrill	33061
+
+CasioG-ShockDW-5000C	33061
+
+KodakInstamatic100	33061
+
+LegoMindstorms1.0	33061
+
+MotorolaStarTac	33061
+
+OlympusZuikoPearlcorder	33061
+
+Pedometer	33061
+
+RadioShackTRS-80Model100	33061
+
+TiVo	33061
+
+Breathalyzer	94831
+
+DigitalThermometer	94831
+
+LogitechHarmony	94831
+
+PentaxK1000	94831
+
+RadioShackTRS-80Model100	94831
+
+SonyLIBRIéEBR-1000EP	94831
+
+ApplePowerBook100	51253
+
+AsusEeePC700	51253
+
+BallpointPen	51253
+
+ClockRadio	51253
+
+EngelbartMouse	51253
+
+FisherAG7SpacePen	51253
+
+GenicaGN803Tavarua	51253
+
+LogitechHarmony	51253
+
+MagellanNAV1000	51253
+
+NintendoGameBoy	51253
+
+PalmPilot1000	51253
+
+PolaroidSX-70	51253
+
+ZenithSpaceCommand	51253
+
+AppleAirPort	14883
+
+AppleiPhone	14883
+
+DiskOnKey	14883
+
+LegoMindstorms1.0	14883
+
+PentaxK1000	14883
+
+PowerStrip	14883
+
+SpotPersonalTracker	14883
+
+TheClapper	14883
+
+Zippo	14883
+
+iRobotRoomba	14883
+
+BellsouthIBMSimon	12634
+
+Breathalyzer	12634
+
+ClockRadio	12634
+
+EpsonHX-20	12634
+
+MusicGremlinWi-FiMP3Player	12634
+
+NintendoGameBoy	12634
+
+PalmPilot1000	12634
+
+PanasonicDVD-L10	12634
+
+TexasInstrumentsSR-10	12634
+
+DysonAirMultiplier	26306
+
+HamiltonPulsar	26306
+
+Lithium-IonBatteries	26306
+
+MicroSD	26306
+
+Modern-DayCanOpener	26306
+
+MusicGremlinWi-FiMP3Player	26306
+
+NintendoGameBoy	26306
+
+PowerStrip	26306
+
+TiVo	26306
+
+ApplePowerBook100	24988
+
+AppleiPhone	24988
+
+AudioHighwayListenUp	24988
+
+BlackBerry6210	24988
+
+Commodore64	24988
+
+Flip	24988
+
+HamiltonPulsar	24988
+
+Hewlett-PackardHP-65	24988
+
+MicroSD	24988
+
+RadioShackTRS-80Model100	24988
+
+Speak&Spell	24988
+
+TiVo	24988
+
+iRobotRoomba	24988
+
+AirTaserModel34000	23137
+
+ApplePowerBook100	23137
+
+DiamondRioPMP300	23137
+
+DigitalThermometer	23137
+
+IomegaZipDrive	23137
+
+Lithium-IonBatteries	23137
+
+LogitechHarmony	23137
+
+MicroSD	23137
+
+MotorolaStarTac	23137
+
+NikonF	23137
+
+OlympusZuikoPearlcorder	23137
+
+OpticalMedia	23137
+
+PalmPilot1000	23137
+
+PanasonicDVD-L10	23137
+
+SonyWatchman	23137
+
+AirTaserModel34000	70724
+
+AsusEeePC700	70724
+
+AtariLynx	70724
+
+AudioHighwayListenUp	70724
+
+BroxodentElectricToothbrush	70724
+
+DiskOnKey	70724
+
+Eye-Fi	70724
+
+NikonF	70724
+
+OpticalMedia	70724
+
+SharpJ-SH04	70724
+
+BluetoothHeadset	90342
+
+ClockRadio	90342
+
+Commodore64	90342
+
+FujifilmQuickSnapDisposableCamera	90342
+
+OpticalMedia	90342
+
+RadioShackTRS-80Model100	90342
+
+AppleNewton	84906
+
+AudioHighwayListenUp	84906
+
+Breathalyzer	84906
+
+DigitalThermometer	84906
+
+Eye-Fi	84906
+
+Flip	84906
+
+HamiltonPulsar	84906
+
+MotorolaDynaTAC8000x	84906
+
+Pacemaker	84906
+
+SonyLIBRIéEBR-1000EP	84906
+
+TheClapper	84906
+
+ApplePowerBook100	45241
+
+BlackBerry6210	45241
+
+Breathalyzer	45241
+
+Heart-RateMonitor	45241
+
+MattelElectronicsFootball	45241
+
+Modern-DayCanOpener	45241
+
+MotorolaRazrV3	45241
+
+PolaroidSX-70	45241
+
+AirTaserModel34000	71829
+
+BoseNoise-CancelingHeadphones	71829
+
+ClockRadio	71829
+
+DigitalThermometer	71829
+
+FisherAG7SpacePen	71829
+
+MattelElectronicsFootball	71829
+
+MotorolaDynaTAC8000x	71829
+
+MotorolaPageWriter2000	71829
+
+Pager	71829
+
+PalmPilot1000	71829
+
+PolaroidSX-70	71829
+
+PsionMC400	71829
+
+AppleNewton	6173
+
+ApplePowerBook100	6173
+
+AtariLynx	6173
+
+BlackBerry6210	6173
+
+GRiDCompass1101	6173
+
+MagellanNAV1000	6173
+
+PowerStrip	6173
+
+PsionMC400	6173
+
+TheClapper	6173
+
+Eye-Fi	42194
+
+Heart-RateMonitor	42194
+
+IomegaZipDrive	42194
+
+Jarvik7	42194
+
+MotorolaHandie-TalkieHT220Slimline	42194
+
+PowerStrip	42194
+
+TexasInstrumentsSR-10	42194
+
+Zippo	42194
+
+BallpointPen	46144
+
+DangerHiptop	46144
+
+FisherAG7SpacePen	46144
+
+Flip	46144
+
+MattelElectronicsFootball	46144
+
+MotorolaStarTac	46144
+
+NintendoGameBoy	46144
+
+OlympusZuikoPearlcorder	46144
+
+PhoneMateModel400	46144
+
+TexasInstrumentsSR-10	46144
+
+Velcro	46144
+
+AppleQuickTake100	91936
+
+BlackBerry6210	91936
+
+CreditCard	91936
+
+DysonAirMultiplier	91936
+
+EnergizerAlkalineBatteries	91936
+
+GenicaGN803Tavarua	91936
+
+LogitechHarmony	91936
+
+MicroSD	91936
+
+OpticalMedia	91936
+
+Pager	91936
+
+RadioShackTRS-80Model100	91936
+
+Velcro	91936
+
+CreditCard	9280
+
+Eye-Fi	9280
+
+HamiltonPulsar	9280
+
+LegoMindstorms1.0	9280
+
+MotorolaDynaTAC8000x	9280
+
+MotorolaHandie-TalkieHT220Slimline	9280
+
+PolaroidSX-70	9280
+
+SonyMavicaMVC-FD5	9280
+
+TiVo	9280
+
+AppleAirPort	93861
+
+ApplePowerBook100	93861
+
+AsusEeePC700	93861
+
+Black&DeckerCordlessElectricDrill	93861
+
+ClockRadio	93861
+
+Hewlett-PackardHP-65	93861
+
+KodakEasyShareOne	93861
+
+KodakInstamatic100	93861
+
+NikonF	93861
+
+NintendoGameBoy	93861
+
+Pager	93861
+
+SharpJ-SH04	93861
+
+SonyWalkmanTPS-L2	93861
+
+Speak&Spell	93861
+
+BoseNoise-CancelingHeadphones	14681
+
+Commodore64	14681
+
+GenicaGN803Tavarua	14681
+
+KodakEasyShareOne	14681
+
+KodakInstamatic100	14681
+
+NintendoGameBoy	14681
+
+SamsungUproar	14681
+
+Speak&Spell	14681
+
+SpotPersonalTracker	14681
+
+iRobotRoomba	14681
+
+AmazonKindle	60157
+
+Black&DeckerCordlessElectricDrill	60157
+
+BroxodentElectricToothbrush	60157
+
+CasioG-ShockDW-5000C	60157
+
+DiskOnKey	60157
+
+EpsonHX-20	60157
+
+Heart-RateMonitor	60157
+
+Leatherman	60157
+
+MicroSD	60157
+
+MotorolaDynaTAC8000x	60157
+
+PanasonicDVD-L10	60157
+
+PolaroidSX-70	60157
+
+PowerStrip	60157
+
+TiVo	60157
+
+iRobotRoomba	60157
+
+BlackBerry6210	78783
+
+DigitalThermometer	78783
+
+EpsonHX-20	78783
+
+FisherAG7SpacePen	78783
+
+Leatherman	78783
+
+MotorolaPageWriter2000	78783
+
+OlympusZuikoPearlcorder	78783
+
+Pacemaker	78783
+
+Pedometer	78783
+
+RegencyTR-1	78783
+
+ApplePowerBook100	39015
+
+BellsouthIBMSimon	39015
+
+GenicaGN803Tavarua	39015
+
+MicroSD	39015
+
+MotorolaStarTac	39015
+
+NikonF	39015
+
+SteriPEN	39015
+
+ZenithSpaceCommand	39015
+
+ApplePowerBook100	52651
+
+BlackBerry6210	52651
+
+CanonEOS5DMarkII	52651
+
+ClockRadio	52651
+
+Commodore64	52651
+
+DigitalThermometer	52651
+
+DysonAirMultiplier	52651
+
+Eye-Fi	52651
+
+GenicaGN803Tavarua	52651
+
+IomegaZipDrive	52651
+
+Modern-DayCanOpener	52651
+
+AppleiPad	94137
+
+Jarvik7	94137
+
+LegoMindstorms1.0	94137
+
+MagellanNAV1000	94137
+
+MotorolaPageWriter2000	94137
+
+PalmPilot1000	94137
+
+RegencyTR-1	94137
+
+SonyWatchman	94137
+
+SpotPersonalTracker	94137
+
+Zippo	94137
+
+ArchosGmini400	57047
+
+AtariLynx	57047
+
+CanonEOS5DMarkII	57047
+
+DigitalThermometer	57047
+
+EpsonHX-20	57047
+
+Heart-RateMonitor	57047
+
+KodakInstamatic100	57047
+
+MotorolaStarTac	57047
+
+PhoneMateModel400	57047
+
+SpotPersonalTracker	57047
+
+ApplePowerBook100	13685
+
+BlackBerry6210	13685
+
+ClockRadio	13685
+
+DigitalThermometer	13685
+
+Eye-Fi	13685
+
+LED	13685
+
+MagellanNAV1000	13685
+
+MattelElectronicsFootball	13685
+
+PolaroidSX-70	13685
+
+SharpJ-SH04	13685
+
+SonyWatchman	13685
+
+SteriPEN	13685
+
+TexasInstrumentsSR-10	13685
+
+ApplePowerBook100	44148
+
+AppleQuickTake100	44148
+
+BlackBerry6210	44148
+
+ElectricRazor	44148
+
+EnergizerAlkalineBatteries	44148
+
+Eye-Fi	44148
+
+KodakEasyShareOne	44148
+
+Leatherman	44148
+
+MattelElectronicsFootball	44148
+
+MotorolaHandie-TalkieHT220Slimline	44148
+
+OpticalMedia	44148
+
+AppleiPad	15352
+
+AsusEeePC700	15352
+
+BluetoothHeadset	15352
+
+EpsonHX-20	15352
+
+Hewlett-PackardHP-65	15352
+
+Leatherman	15352
+
+LegoMindstorms1.0	15352
+
+MITSAltair8800	15352
+
+MagellanNAV1000	15352
+
+MotorolaHandie-TalkieHT220Slimline	15352
+
+PanasonicDVD-L10	15352
+
+PhoneMateModel400	15352
+
+SonyWatchman	15352
+
+AtariLynx	53178
+
+Breathalyzer	53178
+
+BroxodentElectricToothbrush	53178
+
+DiskOnKey	53178
+
+Hewlett-PackardHP-65	53178
+
+LED	53178
+
+MattelElectronicsFootball	53178
+
+MotorolaPageWriter2000	53178
+
+OlympusZuikoPearlcorder	53178
+
+PalmPilot1000	53178
+
+PowerStrip	53178
+
+TexasInstrumentsSR-10	53178
+
+MotorolaHandie-TalkieHT220Slimline	51303
+
+MotorolaPageWriter2000	51303
+
+NikonF	51303
+
+Speak&Spell	51303
+
+TexasInstrumentsSR-10	51303
+
+AudioHighwayListenUp	50169
+
+BluetoothHeadset	50169
+
+Hewlett-PackardHP-65	50169
+
+Leatherman	50169
+
+PanasonicDVD-L10	50169
+
+Pedometer	50169
+
+PentaxK1000	50169
+
+PsionMC400	50169
+
+Speak&Spell	50169
+
+TexasInstrumentsSR-10	50169
+
+ZenithSpaceCommand	50169
+
+DigitalThermometer	9104
+
+FujifilmQuickSnapDisposableCamera	9104
+
+IomegaZipDrive	9104
+
+MattelElectronicsFootball	9104
+
+RegencyTR-1	9104
+
+TexasInstrumentsSR-10	9104
+
+AmazonKindle	12842
+
+BroxodentElectricToothbrush	12842
+
+DangerHiptop	12842
+
+GRiDCompass1101	12842
+
+LegoMindstorms1.0	12842
+
+OlympusZuikoPearlcorder	12842
+
+PolaroidSX-70	12842
+
+Commodore64	57788
+
+LED	57788
+
+Leatherman	57788
+
+NikonF	57788
+
+OpticalMedia	57788
+
+PhoneMateModel400	57788
+
+Speak&Spell	57788
+
+SpotPersonalTracker	57788
+
+AmazonKindle	37194
+
+BellsouthIBMSimon	37194
+
+Breathalyzer	37194
+
+EnergizerAlkalineBatteries	37194
+
+EngelbartMouse	37194
+
+MagellanNAV1000	37194
+
+MattelElectronicsFootball	37194
+
+PanasonicDVD-L10	37194
+
+SharpJ-SH04	37194
+
+SonyWalkmanTPS-L2	37194
+
+BlackBerry6210	66562
+
+CanonEOS5DMarkII	66562
+
+Eye-Fi	66562
+
+HamiltonPulsar	66562
+
+MicroSD	66562
+
+MotorolaRazrV3	66562
+
+RadioShackTRS-80Model100	66562
+
+SonyMavicaMVC-FD5	66562
+
+AppleNewton	87606
+
+ArchosGmini400	87606
+
+AtariLynx	87606
+
+BallpointPen	87606
+
+DysonAirMultiplier	87606
+
+GRiDCompass1101	87606
+
+Leatherman	87606
+
+LegoMindstorms1.0	87606
+
+PalmPilot1000	87606
+
+SonyMavicaMVC-FD5	87606
+
+Speak&Spell	87606
+
+TexasInstrumentsSR-10	87606
+
+Zippo	87606
+
+AtariLynx	72859
+
+AudioHighwayListenUp	72859
+
+Black&DeckerCordlessElectricDrill	72859
+
+ElectricRazor	72859
+
+EpsonHX-20	72859
+
+LED	72859
+
+OlympusZuikoPearlcorder	72859
+
+Pager	72859
+
+SpotPersonalTracker	72859
+
+ZenithSpaceCommand	72859
+
+DysonAirMultiplier	33063
+
+FisherAG7SpacePen	33063
+
+FujifilmQuickSnapDisposableCamera	33063
+
+LegoMindstorms1.0	33063
+
+PhoneMateModel400	33063
+
+TheClapper	33063
+
+iRobotRoomba	33063
+
+AppleiPad	77901
+
+AppleiPod	77901
+
+AtariLynx	77901
+
+Black&DeckerCordlessElectricDrill	77901
+
+BoseNoise-CancelingHeadphones	77901
+
+Breathalyzer	77901
+
+DigitalThermometer	77901
+
+DiskOnKey	77901
+
+EpsonHX-20	77901
+
+OpticalMedia	77901
+
+PanasonicDVD-L10	77901
+
+SonyBetamovieBMC-100P	77901
+
+Zippo	77901
+
+AirTaserModel34000	99295
+
+ElectricRazor	99295
+
+HamiltonPulsar	99295
+
+IomegaZipDrive	99295
+
+KodakEasyShareOne	99295
+
+LogitechHarmony	99295
+
+MattelElectronicsFootball	99295
+
+MotorolaPageWriter2000	99295
+
+MotorolaRazrV3	99295
+
+PsionMC400	99295
+
+SonyMavicaMVC-FD5	99295
+
+DigitalThermometer	93000
+
+FisherAG7SpacePen	93000
+
+Leatherman	93000
+
+MagellanNAV1000	93000
+
+Pedometer	93000
+
+SmokeDetector	93000
+
+AmazonKindle	88280
+
+BallpointPen	88280
+
+BluetoothHeadset	88280
+
+Commodore64	88280
+
+EpsonHX-20	88280
+
+LegoMindstorms1.0	88280
+
+Lithium-IonBatteries	88280
+
+MattelElectronicsFootball	88280
+
+MotorolaPageWriter2000	88280
+
+SharpJ-SH04	88280
+
+TexasInstrumentsSR-10	88280
+
+DiskOnKey	68469
+
+EpsonHX-20	68469
+
+IomegaZipDrive	68469
+
+NintendoGameBoy	68469
+
+Zippo	68469
+
+BellsouthIBMSimon	73783
+
+BroxodentElectricToothbrush	73783
+
+CasioG-ShockDW-5000C	73783
+
+DangerHiptop	73783
+
+DigitalThermometer	73783
+
+DirtDevilHandVac	73783
+
+Jarvik7	73783
+
+LogitechHarmony	73783
+
+OlympusZuikoPearlcorder	73783
+
+Pedometer	73783
+
+PentaxK1000	73783
+
+PolaroidSX-70	73783
+
+TexasInstrumentsSR-10	73783
+
+AudioHighwayListenUp	77192
+
+BlackBerry6210	77192
+
+EngelbartMouse	77192
+
+Modern-DayCanOpener	77192
+
+NikonF	77192
+
+OpticalMedia	77192
+
+PalmPilot1000	77192
+
+PhoneMateModel400	77192
+
+Speak&Spell	77192
+
+TheClapper	77192
+
+AppleNewton	85400
+
+AppleQuickTake100	85400
+
+Breathalyzer	85400
+
+DysonAirMultiplier	85400
+
+Heart-RateMonitor	85400
+
+Leatherman	85400
+
+LogitechHarmony	85400
+
+MotorolaHandie-TalkieHT220Slimline	85400
+
+MotorolaPageWriter2000	85400
+
+PanasonicDVD-L10	85400
+
+Pedometer	85400
+
+PentaxK1000	85400
+
+SonyMavicaMVC-FD5	85400
+
+iRobotRoomba	85400
+
+FujifilmQuickSnapDisposableCamera	18402
+
+GenicaGN803Tavarua	18402
+
+MagellanNAV1000	18402
+
+MotorolaPageWriter2000	18402
+
+NikonF	18402
+
+PowerStrip	18402
+
+SonyLIBRIéEBR-1000EP	18402
+
+Speak&Spell	18402
+
+Velcro	18402
+
+AtariLynx	15450
+
+BroxodentElectricToothbrush	15450
+
+DangerHiptop	15450
+
+FujifilmQuickSnapDisposableCamera	15450
+
+GenicaGN803Tavarua	15450
+
+HamiltonPulsar	15450
+
+LegoMindstorms1.0	15450
+
+Lithium-IonBatteries	15450
+
+MagellanNAV1000	15450
+
+MotorolaStarTac	15450
+
+PalmPilot1000	15450
+
+SmokeDetector	15450
+
+AirTaserModel34000	9746
+
+AmazonKindle	9746
+
+ApplePowerBook100	9746
+
+BlackBerry6210	9746
+
+Breathalyzer	9746
+
+DigitalThermometer	9746
+
+DiskOnKey	9746
+
+EnergizerAlkalineBatteries	9746
+
+Modern-DayCanOpener	9746
+
+NikonF	9746
+
+RadioShackTRS-80Model100	9746
+
+TheClapper	9746
+
+DigitalThermometer	39051
+
+Heart-RateMonitor	39051
+
+LogitechHarmony	39051
+
+PolaroidSX-70	39051
+
+RegencyTR-1	39051
+
+SonyDiscmanD-50	39051
+
+AirTaserModel34000	35809
+
+Black&DeckerCordlessElectricDrill	35809
+
+BoseNoise-CancelingHeadphones	35809
+
+GenicaGN803Tavarua	35809
+
+HamiltonPulsar	35809
+
+Hewlett-PackardHP-65	35809
+
+MattelElectronicsFootball	35809
+
+MotorolaHandie-TalkieHT220Slimline	35809
+
+MotorolaRazrV3	35809
+
+PentaxK1000	35809
+
+PowerStrip	35809
+
+TexasInstrumentsSR-10	35809
+
+BellsouthIBMSimon	83323
+
+Commodore64	83323
+
+DigitalThermometer	83323
+
+IomegaZipDrive	83323
+
+Leatherman	83323
+
+MITSAltair8800	83323
+
+MagellanNAV1000	83323
+
+MotorolaPageWriter2000	83323
+
+RadioShackTRS-80Model100	83323
+
+SonyMavicaMVC-FD5	83323
+
+TexasInstrumentsSR-10	83323
+
+ZenithSpaceCommand	83323
+
+Zippo	83323
+
+AppleiPhone	77909
+
+CreditCard	77909
+
+FujifilmQuickSnapDisposableCamera	77909
+
+IomegaZipDrive	77909
+
+Jarvik7	77909
+
+Leatherman	77909
+
+LegoMindstorms1.0	77909
+
+MITSAltair8800	77909
+
+MagellanNAV1000	77909
+
+NovatelWirelessMiFi	77909
+
+OpticalMedia	77909
+
+PentaxK1000	77909
+
+SharpJ-SH04	77909
+
+SonyLIBRIéEBR-1000EP	77909
+
+SonyMavicaMVC-FD5	77909
+
+TheClapper	77909
+
+Velcro	77909
+
+BallpointPen	57570
+
+BellsouthIBMSimon	57570
+
+DirtDevilHandVac	57570
+
+DiskOnKey	57570
+
+EnergizerAlkalineBatteries	57570
+
+HearingAids	57570
+
+Pedometer	57570
+
+PowerStrip	57570
+
+SmokeDetector	57570
+
+SonyLIBRIéEBR-1000EP	57570
+
+SonyMavicaMVC-FD5	57570
+
+Speak&Spell	57570
+
+Velcro	57570
+
+AppleAirPort	70619
+
+ApplePowerBook100	70619
+
+Breathalyzer	70619
+
+ClockRadio	70619
+
+KodakInstamatic100	70619
+
+OlympusZuikoPearlcorder	70619
+
+PowerStrip	70619
+
+AmazonKindle	85338
+
+ApplePowerBook100	85338
+
+AudioHighwayListenUp	85338
+
+Black&DeckerCordlessElectricDrill	85338
+
+BlackBerry6210	85338
+
+EpsonHX-20	85338
+
+FisherAG7SpacePen	85338
+
+HamiltonPulsar	85338
+
+MITSAltair8800	85338
+
+Modern-DayCanOpener	85338
+
+MotorolaStarTac	85338
+
+NikonF	85338
+
+SonyWatchman	85338
+
+AppleiPod	53380
+
+AsusEeePC700	53380
+
+ClockRadio	53380
+
+EpsonHX-20	53380
+
+Eye-Fi	53380
+
+MagellanNAV1000	53380
+
+SonyMavicaMVC-FD5	53380
+
+SonyWatchman	53380
+
+Velcro	53380
+
+iRobotRoomba	53380
+
+BlackBerry6210	37530
+
+BoseNoise-CancelingHeadphones	37530
+
+Fuzzbuster	37530
+
+Heart-RateMonitor	37530
+
+IomegaZipDrive	37530
+
+NovatelWirelessMiFi	37530
+
+OpticalMedia	37530
+
+AppleiPod	51793
+
+AsusEeePC700	51793
+
+Breathalyzer	51793
+
+DangerHiptop	51793
+
+DysonAirMultiplier	51793
+
+KodakEasyShareOne	51793
+
+MotorolaPageWriter2000	51793
+
+MotorolaStarTac	51793
+
+PentaxK1000	51793
+
+Speak&Spell	51793
+
+ZenithSpaceCommand	51793
+
+AirTaserModel34000	54519
+
+AppleAirPort	54519
+
+ApplePowerBook100	54519
+
+AsusEeePC700	54519
+
+AtariLynx	54519
+
+DigitalThermometer	54519
+
+DysonAirMultiplier	54519
+
+HamiltonPulsar	54519
+
+Lithium-IonBatteries	54519
+
+MotorolaDynaTAC8000x	54519
+
+MotorolaStarTac	54519
+
+NikonF	54519
+
+SharpJ-SH04	54519
+
+AudioHighwayListenUp	71631
+
+BellsouthIBMSimon	71631
+
+EngelbartMouse	71631
+
+Eye-Fi	71631
+
+Fuzzbuster	71631
+
+Modern-DayCanOpener	71631
+
+MotorolaHandie-TalkieHT220Slimline	71631
+
+OpticalMedia	71631
+
+Pacemaker	71631
+
+PentaxK1000	71631
+
+PowerStrip	71631
+
+SonyBetamovieBMC-100P	71631
+
+SonyDiscmanD-50	71631
+
+AtariLynx	85028
+
+BallpointPen	85028
+
+MicroSD	85028
+
+PolaroidSX-70	85028
+
+SonyMavicaMVC-FD5	85028
+
+AirTaserModel34000	51663
+
+CanonEOS5DMarkII	51663
+
+CasioG-ShockDW-5000C	51663
+
+DigitalThermometer	51663
+
+Eye-Fi	51663
+
+Velcro	51663
+
+ConnectixQuickCam	14478
+
+DiamondRioPMP300	14478
+
+DiskOnKey	14478
+
+MagellanNAV1000	14478
+
+MotorolaPageWriter2000	14478
+
+RadioShackTRS-80Model100	14478
+
+SmokeDetector	14478
+
+AppleNewton	54015
+
+BoseNoise-CancelingHeadphones	54015
+
+CasioG-ShockDW-5000C	54015
+
+EngelbartMouse	54015
+
+Eye-Fi	54015
+
+LED	54015
+
+Leatherman	54015
+
+MITSAltair8800	54015
+
+MagellanNAV1000	54015
+
+MattelElectronicsFootball	54015
+
+Pedometer	54015
+
+PowerStrip	54015
+
+iRobotRoomba	54015
+
+AmazonKindle	93566
+
+AppleQuickTake100	93566
+
+DiskOnKey	93566
+
+DysonAirMultiplier	93566
+
+EnergizerAlkalineBatteries	93566
+
+GenicaGN803Tavarua	93566
+
+KodakEasyShareOne	93566
+
+BoseNoise-CancelingHeadphones	59481
+
+DiskOnKey	59481
+
+EnergizerAlkalineBatteries	59481
+
+EpsonHX-20	59481
+
+Leatherman	59481
+
+MattelElectronicsFootball	59481
+
+MotorolaRazrV3	59481
+
+NintendoGameBoy	59481
+
+OlympusZuikoPearlcorder	59481
+
+Velcro	59481
+
+Breathalyzer	3245
+
+DirtDevilHandVac	3245
+
+DysonAirMultiplier	3245
+
+Flip	3245
+
+Fuzzbuster	3245
+
+LegoMindstorms1.0	3245
+
+Lithium-IonBatteries	3245
+
+MotorolaDynaTAC8000x	3245
+
+MotorolaStarTac	3245
+
+OpticalMedia	3245
+
+RegencyTR-1	3245
+
+AppleAirPort	34396
+
+BluetoothHeadset	34396
+
+ClockRadio	34396
+
+Hewlett-PackardHP-65	34396
+
+MagellanNAV1000	34396
+
+MicroSD	34396
+
+MotorolaDynaTAC8000x	34396
+
+NikonF	34396
+
+PolaroidSX-70	34396
+
+PsionMC400	34396
+
+SharpJ-SH04	34396
+
+SpotPersonalTracker	34396
+
+AudioHighwayListenUp	6313
+
+Black&DeckerCordlessElectricDrill	6313
+
+Breathalyzer	6313
+
+Fuzzbuster	6313
+
+HamiltonPulsar	6313
+
+MotorolaDynaTAC8000x	6313
+
+MotorolaPageWriter2000	6313
+
+Zippo	6313
+
+AppleAirPort	82892
+
+Black&DeckerCordlessElectricDrill	82892
+
+Jarvik7	82892
+
+LED	82892
+
+Leatherman	82892
+
+Lithium-IonBatteries	82892
+
+Modern-DayCanOpener	82892
+
+NikonF	82892
+
+NintendoGameBoy	82892
+
+OpticalMedia	82892
+
+Speak&Spell	82892
+
+ZenithSpaceCommand	82892
+
+BellsouthIBMSimon	99745
+
+ElectricRazor	99745
+
+Heart-RateMonitor	99745
+
+Jarvik7	99745
+
+Modern-DayCanOpener	99745
+
+TexasInstrumentsSR-10	99745
+
+BellsouthIBMSimon	40024
+
+DigitalThermometer	40024
+
+Eye-Fi	40024
+
+HamiltonPulsar	40024
+
+MattelElectronicsFootball	40024
+
+RegencyTR-1	40024
+
+SamsungUproar	40024
+
+SonyBetamovieBMC-100P	40024
+
+SonyDiscmanD-50	40024
+
+TheClapper	40024
+
+Zippo	40024
+
+AudioHighwayListenUp	8068
+
+Black&DeckerCordlessElectricDrill	8068
+
+Commodore64	8068
+
+GRiDCompass1101	8068
+
+Heart-RateMonitor	8068
+
+Hewlett-PackardHP-65	8068
+
+LogitechHarmony	8068
+
+MattelElectronicsFootball	8068
+
+MicroSD	8068
+
+Modern-DayCanOpener	8068
+
+MotorolaPageWriter2000	8068
+
+OlympusZuikoPearlcorder	8068
+
+RadioShackTRS-80Model100	8068
+
+SonyWatchman	8068
+
+Velcro	8068
+
+AppleiPod	52701
+
+Black&DeckerCordlessElectricDrill	52701
+
+DiamondRioPMP300	52701
+
+EpsonHX-20	52701
+
+HearingAids	52701
+
+SonyBetamovieBMC-100P	52701
+
+TheClapper	52701
+
+HamiltonPulsar	61245
+
+MotorolaStarTac	61245
+
+Pedometer	61245
+
+SmokeDetector	61245
+
+SonyMavicaMVC-FD5	61245
+
+TheClapper	61245
+
+BellsouthIBMSimon	89264
+
+Lithium-IonBatteries	89264
+
+MagellanNAV1000	89264
+
+Pedometer	89264
+
+PhoneMateModel400	89264
+
+PowerStrip	89264
+
+SonyMavicaMVC-FD5	89264
+
+Speak&Spell	89264
+
+SteriPEN	89264
+
+Bell103	56070
+
+EngelbartMouse	56070
+
+GenicaGN803Tavarua	56070
+
+OlympusZuikoPearlcorder	56070
+
+PanasonicDVD-L10	56070
+
+PentaxK1000	56070
+
+AsusEeePC700	16889
+
+BlackBerry6210	16889
+
+BoseNoise-CancelingHeadphones	16889
+
+Breathalyzer	16889
+
+DiskOnKey	16889
+
+EnergizerAlkalineBatteries	16889
+
+Eye-Fi	16889
+
+PentaxK1000	16889
+
+SonyWatchman	16889
+
+TexasInstrumentsSR-10	16889
+
+TheClapper	16889
+
+Velcro	16889
+
+DysonAirMultiplier	50022
+
+Hewlett-PackardHP-65	50022
+
+LogitechHarmony	50022
+
+NikonF	50022
+
+PalmPilot1000	50022
+
+RadioShackTRS-80Model100	50022
+
+SonyWatchman	50022
+
+TheClapper	50022
+
+BroxodentElectricToothbrush	22018
+
+DirtDevilHandVac	22018
+
+DiskOnKey	22018
+
+HamiltonPulsar	22018
+
+Jarvik7	22018
+
+MagellanNAV1000	22018
+
+PanasonicDVD-L10	22018
+
+BoseNoise-CancelingHeadphones	44224
+
+DirtDevilHandVac	44224
+
+GenicaGN803Tavarua	44224
+
+HamiltonPulsar	44224
+
+LogitechHarmony	44224
+
+NovatelWirelessMiFi	44224
+
+OlympusZuikoPearlcorder	44224
+
+RadioShackTRS-80Model100	44224
+
+SonyBetamovieBMC-100P	44224
+
+TheClapper	44224
+
+iRobotRoomba	44224
+
+ApplePowerBook100	87896
+
+BlackBerry6210	87896
+
+BluetoothHeadset	87896
+
+BroxodentElectricToothbrush	87896
+
+DysonAirMultiplier	87896
+
+GenicaGN803Tavarua	87896
+
+LED	87896
+
+LogitechHarmony	87896
+
+MattelElectronicsFootball	87896
+
+PalmPilot1000	87896
+
+Pedometer	87896
+
+SonyBetamovieBMC-100P	87896
+
+SonyWatchman	87896
+
+Velcro	87896
+
+AppleiPhone	96905
+
+BellsouthIBMSimon	96905
+
+ClockRadio	96905
+
+NintendoGameBoy	96905
+
+PhoneMateModel400	96905
+
+RegencyTR-1	96905
+
+SonyMavicaMVC-FD5	96905
+
+Zippo	96905
+
+iRobotRoomba	96905
+
+ApplePowerBook100	76897
+
+Black&DeckerCordlessElectricDrill	76897
+
+DiskOnKey	76897
+
+MattelElectronicsFootball	76897
+
+MotorolaDynaTAC8000x	76897
+
+PentaxK1000	76897
+
+RegencyTR-1	76897
+
+SonyWatchman	76897
+
+Speak&Spell	76897
+
+SpotPersonalTracker	76897
+
+ApplePowerBook100	12263
+
+AudioHighwayListenUp	12263
+
+Bell103	12263
+
+Black&DeckerCordlessElectricDrill	12263
+
+Breathalyzer	12263
+
+CanonEOS5DMarkII	12263
+
+DiskOnKey	12263
+
+ElectricRazor	12263
+
+EnergizerAlkalineBatteries	12263
+
+NikonF	12263
+
+RadioShackTRS-80Model100	12263
+
+Velcro	12263
+
+ApplePowerBook100	51197
+
+AsusEeePC700	51197
+
+Bell103	51197
+
+Black&DeckerCordlessElectricDrill	51197
+
+DigitalThermometer	51197
+
+IomegaZipDrive	51197
+
+Lithium-IonBatteries	51197
+
+Modern-DayCanOpener	51197
+
+MotorolaPageWriter2000	51197
+
+NikonF	51197
+
+OlympusZuikoPearlcorder	51197
+
+ApplePowerBook100	88557
+
+BellsouthIBMSimon	88557
+
+Breathalyzer	88557
+
+DigitalThermometer	88557
+
+DiskOnKey	88557
+
+EnergizerAlkalineBatteries	88557
+
+Pager	88557
+
+PentaxK1000	88557
+
+PolaroidSX-70	88557
+
+SamsungUproar	88557
+
+SonyBetamovieBMC-100P	88557
+
+SonyMavicaMVC-FD5	88557
+
+TexasInstrumentsSR-10	88557
+
+Velcro	88557
+
+Zippo	88557
+
+DysonAirMultiplier	81321
+
+GRiDCompass1101	81321
+
+MagellanNAV1000	81321
+
+MotorolaDynaTAC8000x	81321
+
+NikonF	81321
+
+Pager	81321
+
+Zippo	81321
+
+ApplePowerBook100	91092
+
+AsusEeePC700	91092
+
+AudioHighwayListenUp	91092
+
+EpsonHX-20	91092
+
+Hewlett-PackardHP-65	91092
+
+LegoMindstorms1.0	91092
+
+MotorolaPageWriter2000	91092
+
+NintendoGameBoy	91092
+
+Pager	91092
+
+PsionMC400	91092
+
+RadioShackTRS-80Model100	91092
+
+SmokeDetector	91092
+
+SonyWatchman	91092
+
+AirTaserModel34000	34965
+
+AppleAirPort	34965
+
+AsusEeePC700	34965
+
+CasioG-ShockDW-5000C	34965
+
+CreditCard	34965
+
+DangerHiptop	34965
+
+DigitalThermometer	34965
+
+DysonAirMultiplier	34965
+
+ElectricRazor	34965
+
+GRiDCompass1101	34965
+
+LED	34965
+
+Lithium-IonBatteries	34965
+
+Modern-DayCanOpener	34965
+
+SharpJ-SH04	34965
+
+SonyWatchman	34965
+
+ZenithSpaceCommand	34965
+
+AmazonKindle	34767
+
+AppleiPhone	34767
+
+BallpointPen	34767
+
+BoseNoise-CancelingHeadphones	34767
+
+EpsonHX-20	34767
+
+GenicaGN803Tavarua	34767
+
+MotorolaPageWriter2000	34767
+
+OlympusZuikoPearlcorder	34767
+
+Pedometer	34767
+
+PolaroidSX-70	34767
+
+SonyWatchman	34767
+
+AudioHighwayListenUp	35345
+
+Commodore64	35345
+
+ConnectixQuickCam	35345
+
+DigitalThermometer	35345
+
+DiskOnKey	35345
+
+EnergizerAlkalineBatteries	35345
+
+FisherAG7SpacePen	35345
+
+MagellanNAV1000	35345
+
+SharpJ-SH04	35345
+
+SonyLIBRIéEBR-1000EP	35345
+
+AmazonKindle	27298
+
+ArchosGmini400	27298
+
+BoseNoise-CancelingHeadphones	27298
+
+EngelbartMouse	27298
+
+Eye-Fi	27298
+
+FisherAG7SpacePen	27298
+
+Heart-RateMonitor	27298
+
+KodakEasyShareOne	27298
+
+MITSAltair8800	27298
+
+iRobotRoomba	27298
+
+AppleiPad	18120
+
+CreditCard	18120
+
+DysonAirMultiplier	18120
+
+Leatherman	18120
+
+MotorolaDynaTAC8000x	18120
+
+MotorolaStarTac	18120
+
+NintendoGameBoy	18120
+
+OpticalMedia	18120
+
+PolaroidSX-70	18120
+
+SonyBetamovieBMC-100P	18120
+
+BlackBerry6210	59346
+
+BoseNoise-CancelingHeadphones	59346
+
+CasioG-ShockDW-5000C	59346
+
+DigitalThermometer	59346
+
+Hewlett-PackardHP-65	59346
+
+IomegaZipDrive	59346
+
+PalmPilot1000	59346
+
+SmokeDetector	59346
+
+SpotPersonalTracker	59346
+
+Velcro	59346
+
+AppleAirPort	17715
+
+AudioHighwayListenUp	17715
+
+BoseNoise-CancelingHeadphones	17715
+
+Breathalyzer	17715
+
+IomegaZipDrive	17715
+
+MITSAltair8800	17715
+
+MagellanNAV1000	17715
+
+MicroSD	17715
+
+MotorolaPageWriter2000	17715
+
+MotorolaStarTac	17715
+
+NikonF	17715
+
+PalmPilot1000	17715
+
+SmokeDetector	17715
+
+SonyWatchman	17715
+
+TexasInstrumentsSR-10	17715
+
+TiVo	17715
+
+AmazonKindle	70176
+
+Commodore64	70176
+
+ConnectixQuickCam	70176
+
+EngelbartMouse	70176
+
+Eye-Fi	70176
+
+MotorolaPageWriter2000	70176
+
+PolaroidSX-70	70176
+
+PowerStrip	70176
+
+TheClapper	70176
+
+CasioG-ShockDW-5000C	89550
+
+GenicaGN803Tavarua	89550
+
+Jarvik7	89550
+
+Leatherman	89550
+
+OlympusZuikoPearlcorder	89550
+
+PalmPilot1000	89550
+
+RegencyTR-1	89550
+
+SonyBetamovieBMC-100P	89550
+
+SonyLIBRIéEBR-1000EP	89550
+
+BellsouthIBMSimon	33102
+
+Breathalyzer	33102
+
+DangerHiptop	33102
+
+DiskOnKey	33102
+
+DysonAirMultiplier	33102
+
+Jarvik7	33102
+
+LegoMindstorms1.0	33102
+
+Speak&Spell	33102
+
+Velcro	33102
+
+AppleiPhone	47771
+
+AudioHighwayListenUp	47771
+
+EngelbartMouse	47771
+
+MattelElectronicsFootball	47771
+
+RadioShackTRS-80Model100	47771
+
+SonyWalkmanTPS-L2	47771
+
+SonyWatchman	47771
+
+EnergizerAlkalineBatteries	67201
+
+EpsonHX-20	67201
+
+HamiltonPulsar	67201
+
+LegoMindstorms1.0	67201
+
+NikonF	67201
+
+SharpJ-SH04	67201
+
+SteriPEN	67201
+
+TheClapper	67201
+
+Zippo	67201
+
+DangerHiptop	93909
+
+DysonAirMultiplier	93909
+
+KodakEasyShareOne	93909
+
+MattelElectronicsFootball	93909
+
+MotorolaStarTac	93909
+
+MusicGremlinWi-FiMP3Player	93909
+
+NintendoGameBoy	93909
+
+PalmPilot1000	93909
+
+SonyMavicaMVC-FD5	93909
+
+Zippo	93909
+
+AirTaserModel34000	15410
+
+AmazonKindle	15410
+
+ApplePowerBook100	15410
+
+AppleiPhone	15410
+
+AppleiPod	15410
+
+DangerHiptop	15410
+
+DigitalThermometer	15410
+
+FujifilmQuickSnapDisposableCamera	15410
+
+GRiDCompass1101	15410
+
+GenicaGN803Tavarua	15410
+
+MotorolaStarTac	15410
+
+NintendoGameBoy	15410
+
+OpticalMedia	15410
+
+Pedometer	15410
+
+PhoneMateModel400	15410
+
+ArchosGmini400	98730
+
+AudioHighwayListenUp	98730
+
+BallpointPen	98730
+
+BellsouthIBMSimon	98730
+
+Lithium-IonBatteries	98730
+
+MicroSD	98730
+
+MotorolaDynaTAC8000x	98730
+
+PolaroidSX-70	98730
+
+SonyBetamovieBMC-100P	98730
+
+Velcro	98730
+
+ApplePowerBook100	86817
+
+ArchosGmini400	86817
+
+BlackBerry6210	86817
+
+EpsonHX-20	86817
+
+MITSAltair8800	86817
+
+OpticalMedia	86817
+
+PanasonicDVD-L10	86817
+
+SmokeDetector	86817
+
+SonyMavicaMVC-FD5	86817
+
+SteriPEN	86817
+
+TexasInstrumentsSR-10	86817
+
+TheClapper	86817
+
+BlackBerry6210	47001
+
+CasioG-ShockDW-5000C	47001
+
+FisherAG7SpacePen	47001
+
+HearingAids	47001
+
+IomegaZipDrive	47001
+
+MicroSD	47001
+
+MotorolaDynaTAC8000x	47001
+
+ApplePowerBook100	18172
+
+BallpointPen	18172
+
+Bell103	18172
+
+BellsouthIBMSimon	18172
+
+DiskOnKey	18172
+
+EngelbartMouse	18172
+
+Eye-Fi	18172
+
+KodakInstamatic100	18172
+
+LogitechHarmony	18172
+
+MotorolaHandie-TalkieHT220Slimline	18172
+
+NikonF	18172
+
+PolaroidSX-70	18172
+
+SonyWatchman	18172
+
+Velcro	18172
+
+iRobotRoomba	18172
+
+AudioHighwayListenUp	70183
+
+BallpointPen	70183
+
+ClockRadio	70183
+
+DysonAirMultiplier	70183
+
+ElectricRazor	70183
+
+EnergizerAlkalineBatteries	70183
+
+MotorolaStarTac	70183
+
+PalmPilot1000	70183
+
+RegencyTR-1	70183
+
+TheClapper	70183
+
+AudioHighwayListenUp	21466
+
+CreditCard	21466
+
+DangerHiptop	21466
+
+Eye-Fi	21466
+
+FujifilmQuickSnapDisposableCamera	21466
+
+HamiltonPulsar	21466
+
+KodakEasyShareOne	21466
+
+MusicGremlinWi-FiMP3Player	21466
+
+OpticalMedia	21466
+
+PsionMC400	21466
+
+TheClapper	21466
+
+CanonEOS5DMarkII	94888
+
+FujifilmQuickSnapDisposableCamera	94888
+
+GenicaGN803Tavarua	94888
+
+HamiltonPulsar	94888
+
+MotorolaPageWriter2000	94888
+
+MusicGremlinWi-FiMP3Player	94888
+
+OlympusZuikoPearlcorder	94888
+
+PanasonicDVD-L10	94888
+
+SonyBetamovieBMC-100P	94888
+
+SonyWatchman	94888
+
+AppleAirPort	62906
+
+BallpointPen	62906
+
+DigitalThermometer	62906
+
+DiskOnKey	62906
+
+EnergizerAlkalineBatteries	62906
+
+Heart-RateMonitor	62906
+
+MusicGremlinWi-FiMP3Player	62906
+
+PentaxK1000	62906
+
+RegencyTR-1	62906
+
+SonyWatchman	62906
+
+Speak&Spell	62906
+
+AirTaserModel34000	64042
+
+AppleiPod	64042
+
+DysonAirMultiplier	64042
+
+EnergizerAlkalineBatteries	64042
+
+GRiDCompass1101	64042
+
+Lithium-IonBatteries	64042
+
+SmokeDetector	64042
+
+SonyBetamovieBMC-100P	64042
+
+Zippo	64042
+
+BoseNoise-CancelingHeadphones	71628
+
+BroxodentElectricToothbrush	71628
+
+DysonAirMultiplier	71628
+
+EpsonHX-20	71628
+
+GRiDCompass1101	71628
+
+IomegaZipDrive	71628
+
+MITSAltair8800	71628
+
+MotorolaPageWriter2000	71628
+
+NikonF	71628
+
+SteriPEN	71628
+
+TiVo	71628
+
+AppleAirPort	51645
+
+Bell103	51645
+
+Black&DeckerCordlessElectricDrill	51645
+
+EnergizerAlkalineBatteries	51645
+
+KodakEasyShareOne	51645
+
+KodakInstamatic100	51645
+
+MotorolaStarTac	51645
+
+NikonF	51645
+
+OlympusZuikoPearlcorder	51645
+
+PsionMC400	51645
+
+BellsouthIBMSimon	32874
+
+BroxodentElectricToothbrush	32874
+
+EpsonHX-20	32874
+
+MagellanNAV1000	32874
+
+NikonF	32874
+
+PolaroidSX-70	32874
+
+SharpJ-SH04	32874
+
+TexasInstrumentsSR-10	32874
+
+Zippo	32874
+
+AirTaserModel34000	2600
+
+AppleAirPort	2600
+
+Breathalyzer	2600
+
+ElectricRazor	2600
+
+MicroSD	2600
+
+SonyMavicaMVC-FD5	2600
+
+Zippo	2600
+
+iRobotRoomba	2600
+
+AmazonKindle	70938
+
+AppleAirPort	70938
+
+CanonEOS5DMarkII	70938
+
+ConnectixQuickCam	70938
+
+DigitalThermometer	70938
+
+EnergizerAlkalineBatteries	70938
+
+EpsonHX-20	70938
+
+HamiltonPulsar	70938
+
+KodakEasyShareOne	70938
+
+MotorolaHandie-TalkieHT220Slimline	70938
+
+NikonF	70938
+
+Pedometer	70938
+
+PhoneMateModel400	70938
+
+SonyWalkmanTPS-L2	70938
+
+Zippo	70938
+
+AirTaserModel34000	54367
+
+BoseNoise-CancelingHeadphones	54367
+
+BroxodentElectricToothbrush	54367
+
+EpsonHX-20	54367
+
+HamiltonPulsar	54367
+
+KodakInstamatic100	54367
+
+SonyBetamovieBMC-100P	54367
+
+SonyLIBRIéEBR-1000EP	54367
+
+SonyWatchman	54367
+
+SpotPersonalTracker	54367
+
+AppleQuickTake100	14931
+
+AudioHighwayListenUp	14931
+
+BellsouthIBMSimon	14931
+
+BlackBerry6210	14931
+
+BoseNoise-CancelingHeadphones	14931
+
+FujifilmQuickSnapDisposableCamera	14931
+
+MotorolaRazrV3	14931
+
+Pedometer	14931
+
+PentaxK1000	14931
+
+BellsouthIBMSimon	78109
+
+DigitalThermometer	78109
+
+EnergizerAlkalineBatteries	78109
+
+IomegaZipDrive	78109
+
+KodakEasyShareOne	78109
+
+MotorolaDynaTAC8000x	78109
+
+MotorolaStarTac	78109
+
+PentaxK1000	78109
+
+AppleQuickTake100	89075
+
+AudioHighwayListenUp	89075
+
+CreditCard	89075
+
+EngelbartMouse	89075
+
+EpsonHX-20	89075
+
+Heart-RateMonitor	89075
+
+IomegaZipDrive	89075
+
+KodakInstamatic100	89075
+
+Leatherman	89075
+
+Modern-DayCanOpener	89075
+
+NikonF	89075
+
+PalmPilot1000	89075
+
+PsionMC400	89075
+
+RegencyTR-1	89075
+
+Zippo	89075
+
+AmazonKindle	25470
+
+AppleiPad	25470
+
+BallpointPen	25470
+
+BlackBerry6210	25470
+
+Breathalyzer	25470
+
+DiskOnKey	25470
+
+Eye-Fi	25470
+
+IomegaZipDrive	25470
+
+PentaxK1000	25470
+
+iRobotRoomba	25470
+
+AirTaserModel34000	96656
+
+Breathalyzer	96656
+
+BroxodentElectricToothbrush	96656
+
+HamiltonPulsar	96656
+
+RadioShackTRS-80Model100	96656
+
+SonyMavicaMVC-FD5	96656
+
+AmazonKindle	11028
+
+BluetoothHeadset	11028
+
+ConnectixQuickCam	11028
+
+Leatherman	11028
+
+NikonF	11028
+
+SonyMavicaMVC-FD5	11028
+
+SpotPersonalTracker	11028
+
+AirTaserModel34000	32581
+
+BlackBerry6210	32581
+
+Eye-Fi	32581
+
+Hewlett-PackardHP-65	32581
+
+LegoMindstorms1.0	32581
+
+MotorolaHandie-TalkieHT220Slimline	32581
+
+RegencyTR-1	32581
+
+Speak&Spell	32581
+
+Black&DeckerCordlessElectricDrill	71971
+
+BluetoothHeadset	71971
+
+DangerHiptop	71971
+
+LED	71971
+
+Modern-DayCanOpener	71971
+
+RegencyTR-1	71971
+
+CanonEOS5DMarkII	44975
+
+CasioG-ShockDW-5000C	44975
+
+EnergizerAlkalineBatteries	44975
+
+EpsonHX-20	44975
+
+GenicaGN803Tavarua	44975
+
+HamiltonPulsar	44975
+
+LegoMindstorms1.0	44975
+
+NikonF	44975
+
+PentaxK1000	44975
+
+PhoneMateModel400	44975
+
+Speak&Spell	44975
+
+Velcro	44975
+
+BlackBerry6210	21294
+
+BluetoothHeadset	21294
+
+BoseNoise-CancelingHeadphones	21294
+
+DiskOnKey	21294
+
+LogitechHarmony	21294
+
+MattelElectronicsFootball	21294
+
+MotorolaStarTac	21294
+
+SonyBetamovieBMC-100P	21294
+
+SonyMavicaMVC-FD5	21294
+
+SpotPersonalTracker	21294
+
+TexasInstrumentsSR-10	21294
+
+iRobotRoomba	21294
+
+EnergizerAlkalineBatteries	54458
+
+FujifilmQuickSnapDisposableCamera	54458
+
+LogitechHarmony	54458
+
+MattelElectronicsFootball	54458
+
+MicroSD	54458
+
+Pedometer	54458
+
+AppleAirPort	21088
+
+AppleQuickTake100	21088
+
+AtariLynx	21088
+
+BluetoothHeadset	21088
+
+Breathalyzer	21088
+
+DangerHiptop	21088
+
+EngelbartMouse	21088
+
+IomegaZipDrive	21088
+
+MITSAltair8800	21088
+
+MusicGremlinWi-FiMP3Player	21088
+
+SonyBetamovieBMC-100P	21088
+
+Speak&Spell	21088
+
+TexasInstrumentsSR-10	21088
+
+TiVo	21088
+
+DigitalThermometer	13364
+
+DysonAirMultiplier	13364
+
+EpsonHX-20	13364
+
+Flip	13364
+
+Hewlett-PackardHP-65	13364
+
+LED	13364
+
+NikonF	13364
+
+SamsungUproar	13364
+
+TheClapper	13364
+
+BroxodentElectricToothbrush	6913
+
+FisherAG7SpacePen	6913
+
+FujifilmQuickSnapDisposableCamera	6913
+
+MagellanNAV1000	6913
+
+MattelElectronicsFootball	6913
+
+MotorolaStarTac	6913
+
+SonyWatchman	6913
+
+Zippo	6913
+
+AirTaserModel34000	87113
+
+AppleiPhone	87113
+
+CanonEOS5DMarkII	87113
+
+Flip	87113
+
+KodakInstamatic100	87113
+
+Lithium-IonBatteries	87113
+
+MITSAltair8800	87113
+
+Modern-DayCanOpener	87113
+
+MotorolaPageWriter2000	87113
+
+PanasonicDVD-L10	87113
+
+SharpJ-SH04	87113
+
+SteriPEN	87113
+
+iRobotRoomba	87113
+
+Black&DeckerCordlessElectricDrill	47929
+
+BluetoothHeadset	47929
+
+Commodore64	47929
+
+EngelbartMouse	47929
+
+MagellanNAV1000	47929
+
+Zippo	47929
+
+AirTaserModel34000	21962
+
+DiamondRioPMP300	21962
+
+Fuzzbuster	21962
+
+IomegaZipDrive	21962
+
+Speak&Spell	21962
+
+Velcro	21962
+
+BluetoothHeadset	86882
+
+Breathalyzer	86882
+
+ElectricRazor	86882
+
+EnergizerAlkalineBatteries	86882
+
+EngelbartMouse	86882
+
+Flip	86882
+
+KodakEasyShareOne	86882
+
+MITSAltair8800	86882
+
+MattelElectronicsFootball	86882
+
+Modern-DayCanOpener	86882
+
+MotorolaPageWriter2000	86882
+
+Pager	86882
+
+Velcro	86882
+
+BellsouthIBMSimon	79666
+
+BluetoothHeadset	79666
+
+Commodore64	79666
+
+CreditCard	79666
+
+DirtDevilHandVac	79666
+
+EpsonHX-20	79666
+
+Hewlett-PackardHP-65	79666
+
+KodakEasyShareOne	79666
+
+MicroSD	79666
+
+NikonF	79666
+
+ApplePowerBook100	24698
+
+AppleiPod	24698
+
+AsusEeePC700	24698
+
+BallpointPen	24698
+
+BellsouthIBMSimon	24698
+
+DigitalThermometer	24698
+
+Heart-RateMonitor	24698
+
+KodakInstamatic100	24698
+
+LegoMindstorms1.0	24698
+
+PentaxK1000	24698
+
+SharpJ-SH04	24698
+
+SonyLIBRIéEBR-1000EP	24698
+
+SonyMavicaMVC-FD5	24698
+
+AmazonKindle	50367
+
+Heart-RateMonitor	50367
+
+Leatherman	50367
+
+NikonF	50367
+
+PentaxK1000	50367
+
+PowerStrip	50367
+
+AmazonKindle	58757
+
+EngelbartMouse	58757
+
+EpsonHX-20	58757
+
+Eye-Fi	58757
+
+PalmPilot1000	58757
+
+RadioShackTRS-80Model100	58757
+
+SonyWatchman	58757
+
+SpotPersonalTracker	58757
+
+Velcro	58757
+
+AppleiPhone	6666
+
+BlackBerry6210	6666
+
+BroxodentElectricToothbrush	6666
+
+EngelbartMouse	6666
+
+MotorolaDynaTAC8000x	6666
+
+NintendoGameBoy	6666
+
+PanasonicDVD-L10	6666
+
+Speak&Spell	6666
+
+AirTaserModel34000	99098
+
+AppleQuickTake100	99098
+
+BlackBerry6210	99098
+
+BroxodentElectricToothbrush	99098
+
+CreditCard	99098
+
+DangerHiptop	99098
+
+DigitalThermometer	99098
+
+DirtDevilHandVac	99098
+
+DysonAirMultiplier	99098
+
+Hewlett-PackardHP-65	99098
+
+LegoMindstorms1.0	99098
+
+Modern-DayCanOpener	99098
+
+NikonF	99098
+
+SharpJ-SH04	99098
+
+AppleAirPort	45594
+
+ArchosGmini400	45594
+
+AsusEeePC700	45594
+
+Breathalyzer	45594
+
+DigitalThermometer	45594
+
+Heart-RateMonitor	45594
+
+IomegaZipDrive	45594
+
+Leatherman	45594
+
+NintendoGameBoy	45594
+
+Pedometer	45594
+
+Speak&Spell	45594
+
+TexasInstrumentsSR-10	45594
+
+AppleQuickTake100	35684
+
+AtariLynx	35684
+
+AudioHighwayListenUp	35684
+
+BluetoothHeadset	35684
+
+DiskOnKey	35684
+
+MattelElectronicsFootball	35684
+
+MotorolaDynaTAC8000x	35684
+
+PowerStrip	35684
+
+SteriPEN	35684
+
+Zippo	35684
+
+AirTaserModel34000	59811
+
+AppleiPad	59811
+
+BellsouthIBMSimon	59811
+
+DigitalThermometer	59811
+
+MagellanNAV1000	59811
+
+MotorolaPageWriter2000	59811
+
+SonyMavicaMVC-FD5	59811
+
+SpotPersonalTracker	59811
+
+Velcro	59811
+
+iRobotRoomba	59811
+
+AppleAirPort	73485
+
+Breathalyzer	73485
+
+CanonEOS5DMarkII	73485
+
+ClockRadio	73485
+
+DangerHiptop	73485
+
+DiskOnKey	73485
+
+FujifilmQuickSnapDisposableCamera	73485
+
+Fuzzbuster	73485
+
+LED	73485
+
+MattelElectronicsFootball	73485
+
+PentaxK1000	73485
+
+PhoneMateModel400	73485
+
+TexasInstrumentsSR-10	73485
+
+TheClapper	73485
+
+AppleNewton	96196
+
+ApplePowerBook100	96196
+
+DiskOnKey	96196
+
+Heart-RateMonitor	96196
+
+Hewlett-PackardHP-65	96196
+
+IomegaZipDrive	96196
+
+MotorolaDynaTAC8000x	96196
+
+NintendoGameBoy	96196
+
+OpticalMedia	96196
+
+Pedometer	96196
+
+SonyLIBRIéEBR-1000EP	96196
+
+SteriPEN	96196
+
+TexasInstrumentsSR-10	96196
+
+AppleAirPort	52508
+
+ClockRadio	52508
+
+DangerHiptop	52508
+
+Heart-RateMonitor	52508
+
+Leatherman	52508
+
+LegoMindstorms1.0	52508
+
+MattelElectronicsFootball	52508
+
+PowerStrip	52508
+
+Velcro	52508
+
+AmazonKindle	72922
+
+ApplePowerBook100	72922
+
+Bell103	72922
+
+BlackBerry6210	72922
+
+Breathalyzer	72922
+
+DigitalThermometer	72922
+
+LED	72922
+
+OlympusZuikoPearlcorder	72922
+
+PalmPilot1000	72922
+
+BoseNoise-CancelingHeadphones	68461
+
+CanonEOS5DMarkII	68461
+
+DirtDevilHandVac	68461
+
+FujifilmQuickSnapDisposableCamera	68461
+
+Hewlett-PackardHP-65	68461
+
+IomegaZipDrive	68461
+
+Jarvik7	68461
+
+LegoMindstorms1.0	68461
+
+MITSAltair8800	68461
+
+MotorolaDynaTAC8000x	68461
+
+SteriPEN	68461
+
+ApplePowerBook100	85571
+
+DangerHiptop	85571
+
+Flip	85571
+
+Hewlett-PackardHP-65	85571
+
+MattelElectronicsFootball	85571
+
+Modern-DayCanOpener	85571
+
+PanasonicDVD-L10	85571
+
+PowerStrip	85571
+
+SonyBetamovieBMC-100P	85571
+
+SonyMavicaMVC-FD5	85571
+
+SonyWalkmanTPS-L2	85571
+
+AirTaserModel34000	35978
+
+AtariLynx	35978
+
+Breathalyzer	35978
+
+DysonAirMultiplier	35978
+
+Fuzzbuster	35978
+
+MotorolaDynaTAC8000x	35978
+
+NikonF	35978
+
+SonyMavicaMVC-FD5	35978
+
+ApplePowerBook100	30826
+
+Breathalyzer	30826
+
+Eye-Fi	30826
+
+GenicaGN803Tavarua	30826
+
+NovatelWirelessMiFi	30826
+
+SpotPersonalTracker	30826
+
+AppleiPhone	85043
+
+BallpointPen	85043
+
+BellsouthIBMSimon	85043
+
+Commodore64	85043
+
+DiskOnKey	85043
+
+ElectricRazor	85043
+
+LED	85043
+
+MagellanNAV1000	85043
+
+MattelElectronicsFootball	85043
+
+Pacemaker	85043
+
+PolaroidSX-70	85043
+
+ZenithSpaceCommand	85043
+
+AppleAirPort	32429
+
+Breathalyzer	32429
+
+BroxodentElectricToothbrush	32429
+
+CanonEOS5DMarkII	32429
+
+Flip	32429
+
+Heart-RateMonitor	32429
+
+MotorolaStarTac	32429
+
+Pedometer	32429
+
+SmokeDetector	32429
+
+AppleiPod	71439
+
+ClockRadio	71439
+
+HamiltonPulsar	71439
+
+Heart-RateMonitor	71439
+
+IomegaZipDrive	71439
+
+MattelElectronicsFootball	71439
+
+NikonF	71439
+
+OpticalMedia	71439
+
+PhoneMateModel400	71439
+
+PolaroidSX-70	71439
+
+PowerStrip	71439
+
+SonyDiscmanD-50	71439
+
+SpotPersonalTracker	71439
+
+AtariLynx	56728
+
+Black&DeckerCordlessElectricDrill	56728
+
+BroxodentElectricToothbrush	56728
+
+Hewlett-PackardHP-65	56728
+
+MITSAltair8800	56728
+
+MotorolaDynaTAC8000x	56728
+
+MotorolaStarTac	56728
+
+PalmPilot1000	56728
+
+SonyWatchman	56728
+
+Speak&Spell	56728
+
+AppleQuickTake100	5080
+
+BlackBerry6210	5080
+
+Commodore64	5080
+
+DigitalThermometer	5080
+
+DysonAirMultiplier	5080
+
+EpsonHX-20	5080
+
+Heart-RateMonitor	5080
+
+Hewlett-PackardHP-65	5080
+
+MotorolaRazrV3	5080
+
+NintendoGameBoy	5080
+
+NovatelWirelessMiFi	5080
+
+PolaroidSX-70	5080
+
+TexasInstrumentsSR-10	5080
+
+Velcro	5080
+
+ZenithSpaceCommand	5080
+
+ApplePowerBook100	17215
+
+BoseNoise-CancelingHeadphones	17215
+
+ElectricRazor	17215
+
+EpsonHX-20	17215
+
+MagellanNAV1000	17215
+
+MattelElectronicsFootball	17215
+
+MicroSD	17215
+
+MusicGremlinWi-FiMP3Player	17215
+
+SonyLIBRIéEBR-1000EP	17215
+
+TheClapper	17215
+
+ZenithSpaceCommand	17215
+
+CreditCard	43118
+
+DigitalThermometer	43118
+
+DiskOnKey	43118
+
+MotorolaPageWriter2000	43118
+
+PalmPilot1000	43118
+
+PentaxK1000	43118
+
+PsionMC400	43118
+
+TexasInstrumentsSR-10	43118
+
+AsusEeePC700	56067
+
+BluetoothHeadset	56067
+
+BoseNoise-CancelingHeadphones	56067
+
+CanonEOS5DMarkII	56067
+
+EpsonHX-20	56067
+
+Eye-Fi	56067
+
+Fuzzbuster	56067
+
+KodakInstamatic100	56067
+
+LogitechHarmony	56067
+
+MagellanNAV1000	56067
+
+SmokeDetector	56067
+
+SonyWatchman	56067
+
+Speak&Spell	56067
+
+TheClapper	56067
+
+AmazonKindle	87019
+
+DangerHiptop	87019
+
+Hewlett-PackardHP-65	87019
+
+MotorolaPageWriter2000	87019
+
+NikonF	87019
+
+PolaroidSX-70	87019
+
+SonyLIBRIéEBR-1000EP	87019
+
+AmazonKindle	61592
+
+AppleQuickTake100	61592
+
+FujifilmQuickSnapDisposableCamera	61592
+
+Hewlett-PackardHP-65	61592
+
+LED	61592
+
+MagellanNAV1000	61592
+
+MotorolaStarTac	61592
+
+NintendoGameBoy	61592
+
+AmazonKindle	41770
+
+AppleQuickTake100	41770
+
+BallpointPen	41770
+
+FujifilmQuickSnapDisposableCamera	41770
+
+LegoMindstorms1.0	41770
+
+MagellanNAV1000	41770
+
+Modern-DayCanOpener	41770
+
+MotorolaDynaTAC8000x	41770
+
+OpticalMedia	41770
+
+TheClapper	41770
+
+Bell103	69983
+
+BellsouthIBMSimon	69983
+
+BluetoothHeadset	69983
+
+KodakEasyShareOne	69983
+
+MicroSD	69983
+
+Velcro	69983
+
+AppleiPhone	25820
+
+Black&DeckerCordlessElectricDrill	25820
+
+DirtDevilHandVac	25820
+
+DiskOnKey	25820
+
+Heart-RateMonitor	25820
+
+MotorolaDynaTAC8000x	25820
+
+Pager	25820
+
+Pedometer	25820
+
+Velcro	25820
+
+AtariLynx	94510
+
+BellsouthIBMSimon	94510
+
+HamiltonPulsar	94510
+
+Heart-RateMonitor	94510
+
+LED	94510
+
+MotorolaPageWriter2000	94510
+
+RegencyTR-1	94510
+
+TexasInstrumentsSR-10	94510
+
+TheClapper	94510
+
+AirTaserModel34000	77383
+
+Breathalyzer	77383
+
+Eye-Fi	77383
+
+HearingAids	77383
+
+Hewlett-PackardHP-65	77383
+
+MotorolaStarTac	77383
+
+SonyMavicaMVC-FD5	77383
+
+SpotPersonalTracker	77383
+
+TiVo	77383
+
+ZenithSpaceCommand	77383
+
+AmazonKindle	24326
+
+AppleAirPort	24326
+
+AudioHighwayListenUp	24326
+
+BallpointPen	24326
+
+BellsouthIBMSimon	24326
+
+BlackBerry6210	24326
+
+BluetoothHeadset	24326
+
+CreditCard	24326
+
+DiskOnKey	24326
+
+Flip	24326
+
+Leatherman	24326
+
+LogitechHarmony	24326
+
+OpticalMedia	24326
+
+RadioShackTRS-80Model100	24326
+
+RegencyTR-1	24326
+
+SonyMavicaMVC-FD5	24326
+
+DiskOnKey	56058
+
+FujifilmQuickSnapDisposableCamera	56058
+
+LegoMindstorms1.0	56058
+
+Modern-DayCanOpener	56058
+
+MotorolaHandie-TalkieHT220Slimline	56058
+
+Pager	56058
+
+PentaxK1000	56058
+
+PhoneMateModel400	56058
+
+AppleAirPort	64489
+
+AppleQuickTake100	64489
+
+BoseNoise-CancelingHeadphones	64489
+
+BroxodentElectricToothbrush	64489
+
+Commodore64	64489
+
+FisherAG7SpacePen	64489
+
+MotorolaStarTac	64489
+
+MusicGremlinWi-FiMP3Player	64489
+
+NintendoGameBoy	64489
+
+OpticalMedia	64489
+
+Pacemaker	64489
+
+PolaroidSX-70	64489
+
+RegencyTR-1	64489
+
+TheClapper	64489
+
+AppleiPod	84058
+
+BellsouthIBMSimon	84058
+
+FujifilmQuickSnapDisposableCamera	84058
+
+HamiltonPulsar	84058
+
+IomegaZipDrive	84058
+
+NikonF	84058
+
+NovatelWirelessMiFi	84058
+
+Pedometer	84058
+
+PentaxK1000	84058
+
+AirTaserModel34000	5152
+
+AmazonKindle	5152
+
+ClockRadio	5152
+
+EpsonHX-20	5152
+
+FisherAG7SpacePen	5152
+
+Heart-RateMonitor	5152
+
+Hewlett-PackardHP-65	5152
+
+Leatherman	5152
+
+MotorolaDynaTAC8000x	5152
+
+MotorolaStarTac	5152
+
+PentaxK1000	5152
+
+PolaroidSX-70	5152
+
+SonyMavicaMVC-FD5	5152
+
+AirTaserModel34000	72480
+
+ClockRadio	72480
+
+FisherAG7SpacePen	72480
+
+GRiDCompass1101	72480
+
+MicroSD	72480
+
+MotorolaStarTac	72480
+
+PentaxK1000	72480
+
+PolaroidSX-70	72480
+
+SonyBetamovieBMC-100P	72480
+
+DigitalThermometer	69533
+
+FisherAG7SpacePen	69533
+
+HamiltonPulsar	69533
+
+PalmPilot1000	69533
+
+PanasonicDVD-L10	69533
+
+AppleNewton	48206
+
+BallpointPen	48206
+
+BlackBerry6210	48206
+
+Breathalyzer	48206
+
+DysonAirMultiplier	48206
+
+EpsonHX-20	48206
+
+Modern-DayCanOpener	48206
+
+PhoneMateModel400	48206
+
+AmazonKindle	14142
+
+AppleAirPort	14142
+
+BellsouthIBMSimon	14142
+
+DysonAirMultiplier	14142
+
+EpsonHX-20	14142
+
+Flip	14142
+
+HamiltonPulsar	14142
+
+Hewlett-PackardHP-65	14142
+
+LegoMindstorms1.0	14142
+
+PhoneMateModel400	14142
+
+PowerStrip	14142
+
+RadioShackTRS-80Model100	14142
+
+SharpJ-SH04	14142
+
+SonyDiscmanD-50	14142
+
+Speak&Spell	14142
+
+Eye-Fi	67416
+
+Hewlett-PackardHP-65	67416
+
+MotorolaRazrV3	67416
+
+OlympusZuikoPearlcorder	67416
+
+SonyMavicaMVC-FD5	67416
+
+SteriPEN	67416
+
+TexasInstrumentsSR-10	67416
+
+Zippo	67416
+
+ArchosGmini400	89711
+
+Eye-Fi	89711
+
+Fuzzbuster	89711
+
+Leatherman	89711
+
+LogitechHarmony	89711
+
+NikonF	89711
+
+RadioShackTRS-80Model100	89711
+
+TexasInstrumentsSR-10	89711
+
+AirTaserModel34000	42102
+
+ApplePowerBook100	42102
+
+AppleiPhone	42102
+
+AppleiPod	42102
+
+Black&DeckerCordlessElectricDrill	42102
+
+BluetoothHeadset	42102
+
+MotorolaStarTac	42102
+
+PalmPilot1000	42102
+
+SonyDiscmanD-50	42102
+
+TheClapper	42102
+
+AppleNewton	66352
+
+AppleQuickTake100	66352
+
+BallpointPen	66352
+
+Modern-DayCanOpener	66352
+
+MotorolaPageWriter2000	66352
+
+PalmPilot1000	66352
+
+SteriPEN	66352
+
+TexasInstrumentsSR-10	66352
+
+TheClapper	66352
+
+AirTaserModel34000	25817
+
+AtariLynx	25817
+
+AudioHighwayListenUp	25817
+
+EngelbartMouse	25817
+
+HamiltonPulsar	25817
+
+Heart-RateMonitor	25817
+
+OlympusZuikoPearlcorder	25817
+
+PanasonicDVD-L10	25817
+
+SonyWatchman	25817
+
+TheClapper	25817
+
+DiskOnKey	76706
+
+EnergizerAlkalineBatteries	76706
+
+MotorolaStarTac	76706
+
+Pager	76706
+
+TexasInstrumentsSR-10	76706
+
+AppleNewton	64307
+
+ArchosGmini400	64307
+
+BallpointPen	64307
+
+BroxodentElectricToothbrush	64307
+
+Commodore64	64307
+
+EnergizerAlkalineBatteries	64307
+
+Eye-Fi	64307
+
+MITSAltair8800	64307
+
+MagellanNAV1000	64307
+
+MattelElectronicsFootball	64307
+
+MotorolaDynaTAC8000x	64307
+
+NintendoGameBoy	64307
+
+PowerStrip	64307
+
+SmokeDetector	64307
+
+ApplePowerBook100	95674
+
+AppleiPod	95674
+
+BellsouthIBMSimon	95674
+
+DigitalThermometer	95674
+
+HamiltonPulsar	95674
+
+IomegaZipDrive	95674
+
+LED	95674
+
+PanasonicDVD-L10	95674
+
+DysonAirMultiplier	89726
+
+FujifilmQuickSnapDisposableCamera	89726
+
+KodakInstamatic100	89726
+
+Leatherman	89726
+
+LegoMindstorms1.0	89726
+
+NintendoGameBoy	89726
+
+SonyBetamovieBMC-100P	89726
+
+AirTaserModel34000	27330
+
+ClockRadio	27330
+
+Commodore64	27330
+
+DirtDevilHandVac	27330
+
+EpsonHX-20	27330
+
+FisherAG7SpacePen	27330
+
+LegoMindstorms1.0	27330
+
+MagellanNAV1000	27330
+
+Modern-DayCanOpener	27330
+
+MotorolaStarTac	27330
+
+Pedometer	27330
+
+Velcro	27330
+
+ZenithSpaceCommand	27330
+
+BoseNoise-CancelingHeadphones	17559
+
+BroxodentElectricToothbrush	17559
+
+CanonEOS5DMarkII	17559
+
+DysonAirMultiplier	17559
+
+Lithium-IonBatteries	17559
+
+MITSAltair8800	17559
+
+MagellanNAV1000	17559
+
+PolaroidSX-70	17559
+
+FujifilmQuickSnapDisposableCamera	74458
+
+HamiltonPulsar	74458
+
+Hewlett-PackardHP-65	74458
+
+LED	74458
+
+LegoMindstorms1.0	74458
+
+LogitechHarmony	74458
+
+Modern-DayCanOpener	74458
+
+Black&DeckerCordlessElectricDrill	82442
+
+DysonAirMultiplier	82442
+
+KodakEasyShareOne	82442
+
+MotorolaPageWriter2000	82442
+
+OlympusZuikoPearlcorder	82442
+
+PalmPilot1000	82442
+
+SonyDiscmanD-50	82442
+
+Speak&Spell	82442
+
+TexasInstrumentsSR-10	82442
+
+ZenithSpaceCommand	82442
+
+AsusEeePC700	7756
+
+BellsouthIBMSimon	7756
+
+BluetoothHeadset	7756
+
+DirtDevilHandVac	7756
+
+MotorolaDynaTAC8000x	7756
+
+NintendoGameBoy	7756
+
+SonyWatchman	7756
+
+TexasInstrumentsSR-10	7756
+
+AudioHighwayListenUp	64820
+
+DiskOnKey	64820
+
+MotorolaStarTac	64820
+
+MusicGremlinWi-FiMP3Player	64820
+
+PentaxK1000	64820
+
+RadioShackTRS-80Model100	64820
+
+Speak&Spell	64820
+
+SpotPersonalTracker	64820
+
+AppleNewton	2436
+
+CasioG-ShockDW-5000C	2436
+
+ConnectixQuickCam	2436
+
+DysonAirMultiplier	2436
+
+Eye-Fi	2436
+
+GenicaGN803Tavarua	2436
+
+Hewlett-PackardHP-65	2436
+
+LegoMindstorms1.0	2436
+
+MotorolaDynaTAC8000x	2436
+
+SharpJ-SH04	2436
+
+SonyBetamovieBMC-100P	2436
+
+AirTaserModel34000	70774
+
+AppleAirPort	70774
+
+AppleQuickTake100	70774
+
+ElectricRazor	70774
+
+EngelbartMouse	70774
+
+FisherAG7SpacePen	70774
+
+GRiDCompass1101	70774
+
+LegoMindstorms1.0	70774
+
+MotorolaDynaTAC8000x	70774
+
+MotorolaStarTac	70774
+
+SmokeDetector	70774
+
+SonyLIBRIéEBR-1000EP	70774
+
+Zippo	70774
+
+AppleAirPort	65179
+
+AppleQuickTake100	65179
+
+Black&DeckerCordlessElectricDrill	65179
+
+ClockRadio	65179
+
+FisherAG7SpacePen	65179
+
+PalmPilot1000	65179
+
+Pedometer	65179
+
+PentaxK1000	65179
+
+Speak&Spell	65179
+
+Black&DeckerCordlessElectricDrill	25688
+
+BlackBerry6210	25688
+
+Breathalyzer	25688
+
+BroxodentElectricToothbrush	25688
+
+ConnectixQuickCam	25688
+
+DiskOnKey	25688
+
+MicroSD	25688
+
+TheClapper	25688
+
+BellsouthIBMSimon	68938
+
+OpticalMedia	68938
+
+PowerStrip	68938
+
+SonyBetamovieBMC-100P	68938
+
+TexasInstrumentsSR-10	68938
+
+BlackBerry6210	21737
+
+BroxodentElectricToothbrush	21737
+
+CanonEOS5DMarkII	21737
+
+DiskOnKey	21737
+
+EnergizerAlkalineBatteries	21737
+
+HearingAids	21737
+
+Heart-RateMonitor	21737
+
+IomegaZipDrive	21737
+
+KodakEasyShareOne	21737
+
+LogitechHarmony	21737
+
+MotorolaStarTac	21737
+
+NintendoGameBoy	21737
+
+PalmPilot1000	21737
+
+PanasonicDVD-L10	21737
+
+RadioShackTRS-80Model100	21737
+
+SonyLIBRIéEBR-1000EP	21737
+
+TexasInstrumentsSR-10	21737
+
+Zippo	21737
+
+AudioHighwayListenUp	71486
+
+BlackBerry6210	71486
+
+BroxodentElectricToothbrush	71486
+
+ConnectixQuickCam	71486
+
+DiskOnKey	71486
+
+GenicaGN803Tavarua	71486
+
+IomegaZipDrive	71486
+
+MicroSD	71486
+
+OlympusZuikoPearlcorder	71486
+
+Pager	71486
+
+PolaroidSX-70	71486
+
+SharpJ-SH04	71486
+
+SonyWatchman	71486
+
+ApplePowerBook100	97991
+
+BallpointPen	97991
+
+BellsouthIBMSimon	97991
+
+ElectricRazor	97991
+
+EngelbartMouse	97991
+
+Modern-DayCanOpener	97991
+
+MotorolaPageWriter2000	97991
+
+NovatelWirelessMiFi	97991
+
+OlympusZuikoPearlcorder	97991
+
+Pedometer	97991
+
+PentaxK1000	97991
+
+ClockRadio	22740
+
+DangerHiptop	22740
+
+DiamondRioPMP300	22740
+
+EpsonHX-20	22740
+
+LogitechHarmony	22740
+
+MotorolaPageWriter2000	22740
+
+OlympusZuikoPearlcorder	22740
+
+PanasonicDVD-L10	22740
+
+SonyWatchman	22740
+
+GenicaGN803Tavarua	53998
+
+Hewlett-PackardHP-65	53998
+
+KodakEasyShareOne	53998
+
+MotorolaDynaTAC8000x	53998
+
+SonyMavicaMVC-FD5	53998
+
+AppleAirPort	54454
+
+AppleiPad	54454
+
+BlackBerry6210	54454
+
+BroxodentElectricToothbrush	54454
+
+MotorolaStarTac	54454
+
+SonyMavicaMVC-FD5	54454
+
+AirTaserModel34000	3146
+
+AppleQuickTake100	3146
+
+Black&DeckerCordlessElectricDrill	3146
+
+FujifilmQuickSnapDisposableCamera	3146
+
+HamiltonPulsar	3146
+
+IomegaZipDrive	3146
+
+Lithium-IonBatteries	3146
+
+MotorolaDynaTAC8000x	3146
+
+MotorolaPageWriter2000	3146
+
+MotorolaStarTac	3146
+
+NintendoGameBoy	3146
+
+NovatelWirelessMiFi	3146
+
+AudioHighwayListenUp	1753
+
+Fuzzbuster	1753
+
+HamiltonPulsar	1753
+
+MITSAltair8800	1753
+
+MicroSD	1753
+
+MotorolaStarTac	1753
+
+PentaxK1000	1753
+
+RegencyTR-1	1753
+
+AppleNewton	66528
+
+AppleiPhone	66528
+
+Black&DeckerCordlessElectricDrill	66528
+
+BlackBerry6210	66528
+
+Heart-RateMonitor	66528
+
+NikonF	66528
+
+PhoneMateModel400	66528
+
+RadioShackTRS-80Model100	66528
+
+SamsungUproar	66528
+
+SonyWatchman	66528
+
+Velcro	66528
+
+BroxodentElectricToothbrush	41798
+
+DirtDevilHandVac	41798
+
+MicroSD	41798
+
+SonyBetamovieBMC-100P	41798
+
+Velcro	41798
+
+Zippo	41798
+
+AirTaserModel34000	96208
+
+ApplePowerBook100	96208
+
+FujifilmQuickSnapDisposableCamera	96208
+
+Lithium-IonBatteries	96208
+
+LogitechHarmony	96208
+
+ApplePowerBook100	54658
+
+FujifilmQuickSnapDisposableCamera	54658
+
+HamiltonPulsar	54658
+
+Heart-RateMonitor	54658
+
+MusicGremlinWi-FiMP3Player	54658
+
+NikonF	54658
+
+PowerStrip	54658
+
+SharpJ-SH04	54658
+
+SonyMavicaMVC-FD5	54658
+
+SonyWatchman	54658
+
+Speak&Spell	54658
+
+TheClapper	54658
+
+AppleAirPort	74797
+
+CasioG-ShockDW-5000C	74797
+
+LogitechHarmony	74797
+
+MotorolaPageWriter2000	74797
+
+MotorolaStarTac	74797
+
+OpticalMedia	74797
+
+Pedometer	74797
+
+Zippo	74797
+
+AppleNewton	8289
+
+BlackBerry6210	8289
+
+Eye-Fi	8289
+
+GRiDCompass1101	8289
+
+MotorolaStarTac	8289
+
+PentaxK1000	8289
+
+PolaroidSX-70	8289
+
+SmokeDetector	8289
+
+SonyMavicaMVC-FD5	8289
+
+SonyWatchman	8289
+
+SteriPEN	8289
+
+BoseNoise-CancelingHeadphones	18567
+
+Eye-Fi	18567
+
+MagellanNAV1000	18567
+
+MotorolaDynaTAC8000x	18567
+
+Pedometer	18567
+
+ApplePowerBook100	37017
+
+BluetoothHeadset	37017
+
+DysonAirMultiplier	37017
+
+FisherAG7SpacePen	37017
+
+MagellanNAV1000	37017
+
+PowerStrip	37017
+
+SonyWatchman	37017
+
+TexasInstrumentsSR-10	37017
+
+TheClapper	37017
+
+AmazonKindle	65527
+
+AppleQuickTake100	65527
+
+AtariLynx	65527
+
+BallpointPen	65527
+
+EngelbartMouse	65527
+
+FujifilmQuickSnapDisposableCamera	65527
+
+Fuzzbuster	65527
+
+LogitechHarmony	65527
+
+MagellanNAV1000	65527
+
+MattelElectronicsFootball	65527
+
+OpticalMedia	65527
+
+PalmPilot1000	65527
+
+SonyLIBRIéEBR-1000EP	65527
+
+iRobotRoomba	65527
+
+Breathalyzer	92178
+
+GenicaGN803Tavarua	92178
+
+RadioShackTRS-80Model100	92178
+
+SonyBetamovieBMC-100P	92178
+
+SonyMavicaMVC-FD5	92178
+
+Velcro	92178
+
+AppleiPod	83107
+
+Black&DeckerCordlessElectricDrill	83107
+
+BlackBerry6210	83107
+
+BluetoothHeadset	83107
+
+DiskOnKey	83107
+
+DysonAirMultiplier	83107
+
+EngelbartMouse	83107
+
+FisherAG7SpacePen	83107
+
+HamiltonPulsar	83107
+
+OlympusZuikoPearlcorder	83107
+
+PhoneMateModel400	83107
+
+PolaroidSX-70	83107
+
+TheClapper	83107
+
+BlackBerry6210	51103
+
+BroxodentElectricToothbrush	51103
+
+DysonAirMultiplier	51103
+
+ElectricRazor	51103
+
+MagellanNAV1000	51103
+
+Pager	51103
+
+PsionMC400	51103
+
+SonyDiscmanD-50	51103
+
+TiVo	51103
+
+Velcro	51103
+
+AirTaserModel34000	49591
+
+AppleNewton	49591
+
+BluetoothHeadset	49591
+
+DangerHiptop	49591
+
+FisherAG7SpacePen	49591
+
+Hewlett-PackardHP-65	49591
+
+MattelElectronicsFootball	49591
+
+MotorolaDynaTAC8000x	49591
+
+PolaroidSX-70	49591
+
+PowerStrip	49591
+
+DysonAirMultiplier	94795
+
+EpsonHX-20	94795
+
+Hewlett-PackardHP-65	94795
+
+KodakInstamatic100	94795
+
+MITSAltair8800	94795
+
+NikonF	94795
+
+RadioShackTRS-80Model100	94795
+
+TexasInstrumentsSR-10	94795
+
+AppleiPod	67906
+
+ArchosGmini400	67906
+
+BroxodentElectricToothbrush	67906
+
+DysonAirMultiplier	67906
+
+EpsonHX-20	67906
+
+Lithium-IonBatteries	67906
+
+MotorolaHandie-TalkieHT220Slimline	67906
+
+Pedometer	67906
+
+PsionMC400	67906
+
+RadioShackTRS-80Model100	67906
+
+SonyLIBRIéEBR-1000EP	67906
+
+SonyMavicaMVC-FD5	67906
+
+BluetoothHeadset	44702
+
+MITSAltair8800	44702
+
+MotorolaStarTac	44702
+
+OlympusZuikoPearlcorder	44702
+
+TexasInstrumentsSR-10	44702
+
+AtariLynx	62855
+
+BoseNoise-CancelingHeadphones	62855
+
+DysonAirMultiplier	62855
+
+Heart-RateMonitor	62855
+
+MotorolaPageWriter2000	62855
+
+MotorolaStarTac	62855
+
+PowerStrip	62855
+
+SonyBetamovieBMC-100P	62855
+
+SonyMavicaMVC-FD5	62855
+
+Speak&Spell	62855
+
+Velcro	62855
+
+DigitalThermometer	24303
+
+Fuzzbuster	24303
+
+MagellanNAV1000	24303
+
+MotorolaHandie-TalkieHT220Slimline	24303
+
+OlympusZuikoPearlcorder	24303
+
+Pacemaker	24303
+
+RadioShackTRS-80Model100	24303
+
+SonyMavicaMVC-FD5	24303
+
+SpotPersonalTracker	24303
+
+AirTaserModel34000	81434
+
+AtariLynx	81434
+
+ClockRadio	81434
+
+GRiDCompass1101	81434
+
+GenicaGN803Tavarua	81434
+
+KodakInstamatic100	81434
+
+LED	81434
+
+MattelElectronicsFootball	81434
+
+MotorolaStarTac	81434
+
+TheClapper	81434
+
+AppleAirPort	32162
+
+BluetoothHeadset	32162
+
+CreditCard	32162
+
+DigitalThermometer	32162
+
+MITSAltair8800	32162
+
+Zippo	32162
+
+ApplePowerBook100	27235
+
+AudioHighwayListenUp	27235
+
+Breathalyzer	27235
+
+Hewlett-PackardHP-65	27235
+
+Leatherman	27235
+
+Modern-DayCanOpener	27235
+
+RadioShackTRS-80Model100	27235
+
+RegencyTR-1	27235
+
+SonyLIBRIéEBR-1000EP	27235
+
+SonyMavicaMVC-FD5	27235
+
+TexasInstrumentsSR-10	27235
+
+ZenithSpaceCommand	27235
+
+Black&DeckerCordlessElectricDrill	96413
+
+Breathalyzer	96413
+
+BroxodentElectricToothbrush	96413
+
+DangerHiptop	96413
+
+DigitalThermometer	96413
+
+EnergizerAlkalineBatteries	96413
+
+EpsonHX-20	96413
+
+FisherAG7SpacePen	96413
+
+LogitechHarmony	96413
+
+MagellanNAV1000	96413
+
+MattelElectronicsFootball	96413
+
+Pedometer	96413
+
+AmazonKindle	77572
+
+BlackBerry6210	77572
+
+BoseNoise-CancelingHeadphones	77572
+
+BroxodentElectricToothbrush	77572
+
+DangerHiptop	77572
+
+DysonAirMultiplier	77572
+
+Hewlett-PackardHP-65	77572
+
+KodakEasyShareOne	77572
+
+LogitechHarmony	77572
+
+MITSAltair8800	77572
+
+PanasonicDVD-L10	77572
+
+PowerStrip	77572
+
+AirTaserModel34000	73136
+
+AudioHighwayListenUp	73136
+
+EnergizerAlkalineBatteries	73136
+
+HamiltonPulsar	73136
+
+KodakEasyShareOne	73136
+
+LED	73136
+
+PhoneMateModel400	73136
+
+SteriPEN	73136
+
+TheClapper	73136
+
+CanonEOS5DMarkII	70554
+
+ClockRadio	70554
+
+Flip	70554
+
+FujifilmQuickSnapDisposableCamera	70554
+
+Heart-RateMonitor	70554
+
+MagellanNAV1000	70554
+
+PalmPilot1000	70554
+
+PanasonicDVD-L10	70554
+
+SonyLIBRIéEBR-1000EP	70554
+
+SonyMavicaMVC-FD5	70554
+
+Velcro	70554
+
+AppleNewton	91820
+
+BellsouthIBMSimon	91820
+
+Black&DeckerCordlessElectricDrill	91820
+
+Breathalyzer	91820
+
+KodakEasyShareOne	91820
+
+Modern-DayCanOpener	91820
+
+NovatelWirelessMiFi	91820
+
+TiVo	91820
+
+Zippo	91820
+
+AsusEeePC700	47537
+
+BlackBerry6210	47537
+
+BluetoothHeadset	47537
+
+Commodore64	47537
+
+ConnectixQuickCam	47537
+
+EngelbartMouse	47537
+
+Heart-RateMonitor	47537
+
+IomegaZipDrive	47537
+
+PanasonicDVD-L10	47537
+
+PolaroidSX-70	47537
+
+SonyWatchman	47537
+
+Zippo	47537
+

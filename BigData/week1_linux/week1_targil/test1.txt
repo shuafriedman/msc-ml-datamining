@@ -1,0 +1,9 @@
+total 12
+-rw-rw-r-- 1 shua shua    0 Feb 25 19:37 blah
+-rw-rw-r-- 1 shua shua    0 Feb 25 19:37 blah2
+-rw-rw-r-- 1 shua shua    0 Feb 25 19:37 blah3
+-rw-rw-r-- 1 shua shua    0 Feb 25 19:39 echo
+drwxrwxr-x 3 shua shua 4096 Feb 25 19:24 folder1
+drwxrwxr-x 2 shua shua 4096 Feb 25 19:23 folder2
+-rw-rw-r-- 1 shua shua    0 Feb 25 19:42 test1.txt
+-rw-rw-r-- 1 shua shua    6 Feb 25 19:41 test.txt
