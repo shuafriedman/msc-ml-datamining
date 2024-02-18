@@ -97,15 +97,18 @@ class SAM(nn.Module):
 		return out
 		
 if __name__ == '__main__':
-	x = np.random.randint(0, 255, (10, 20))
-	y = np.random.randint(0, 20, (10, 20))
-	sam = SAM(num_class=5, max_byte_len=20)
-	out = sam(torch.from_numpy(x).long(), torch.from_numpy(y).long())
-	print(out[0])
+    # Testing the model works
+    x = np.random.randint(0, 255, (10, 20))
+    y = np.random.randint(0, 20, (10, 20))
+    sam = SAM(num_classes=5, max_packet_length=20)
+    out = sam(torch.from_numpy(x).long(), torch.from_numpy(y).long())
+    print(out[0])
 
-	sam.eval()
-	out, score = sam(torch.from_numpy(x).long(), torch.from_numpy(y).long())
-	print(out[0])
-	print("score")
-	print(score[0])
-    #score sum
+    sam.eval()
+
+    out, weights = sam(torch.from_numpy(x).long(), torch.from_numpy(y).long())
+    print(out[0])
+    print("weights shape")
+    print(weights.shape)
+    print("weights")
+    print(weights[0])

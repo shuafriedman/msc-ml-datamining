@@ -26,3 +26,11 @@ STEPS TO RUN
 # Data Structure
 Each packet, after running tools.py, contains 3 elements: x = header_data, y = position in packet, label = protocol type (integer 0-9)
 X and Y are both fed into the model as input, predicting the label.
+
+# Recomendations
+1) More complex positional Encoder
+2) More efficient Attention mechanism (sparse attention) # https://github.com/kyegomez/SparseAttention?tab=readme-ov-file
+
+(rest)
+3) layer normalization/batch normalization
+4) Expand max byte len to 60 (google if this makes sense, instead of 50)

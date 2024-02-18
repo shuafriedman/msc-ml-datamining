@@ -12,7 +12,7 @@ import torch.nn as nn
 import argparse
 import time
 from tqdm import tqdm, trange
-from SAM import SAM
+from ShuaImprovedSam import SAM
 from tool import protocols, load_epoch_data, max_byte_len
 from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
 import pickle
@@ -203,7 +203,7 @@ def main(i, flow_dict):
 if __name__ == '__main__':
 	print("Current working directory: ", os.getcwd())
 	for i in range(10):
-		with open(f'Cyber/SAM-for-Traffic-Classification/protocol_cls/pro_flows_{i}_noip_fold.pkl', 'rb') as f:
+		with open(f'Cyber/SAM-for-Traffic-Classification/protocol_cls/data/pro_flows_{i}_noip_fold.pkl', 'rb') as f:
 			flow_dict = pickle.load(f)
 		print('====', i, ' fold validation ====')
 		main(i, flow_dict)
