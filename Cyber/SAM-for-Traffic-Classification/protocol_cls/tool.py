@@ -10,10 +10,10 @@ import numpy as np
 from preprocess import protocols
 from tqdm import tqdm, trange
 
-ip_features = {'hl':1,'tos':1,'len':2,'df':1,'mf':1,'ttl':1,'p':1}
+ip_features = {'hl':1,'tos':1,'len':2,'df':1,'mf':1,'ttl':1,'p':1} #not sure what this is for, this section isn't used
 tcp_features = {'off':1,'flags':1,'win':2}
 udp_features = {'ulen':2}
-max_byte_len = 50
+max_byte_len = 50 # This isn't defined in the paper. The old paper set it at 40 though.
 
 def mask(p):
 	print(p)
