@@ -7,7 +7,6 @@ import numpy as np
 # 2) original does a very simple addition of the byte and position vectors for positional encoding. Shoudl add in more complex positional encoding
 #    they don't mention the method in the paper though
 # 3) In the paper, they write that they use 2 1-d cnns combined, this doesn't exist in the code though
-# 4) The paper uses only 1 head for computations, would recomend using more heads for better performance-- better gpus' are available and cheaper now
 
 class Cnn(nn.Module): #I create a separate class for the CNNs, sinve they are used twice
     def __init__(self, in_channels, kernel_amount, kernel_size):
