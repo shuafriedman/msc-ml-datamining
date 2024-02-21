@@ -1,0 +1,24 @@
+Accuracy: 0.9142468625173518
+
+Confusion Matrix:
+	dns	smtp	ssh	ftp	http	https
+dns	961	3	6	0	36	24
+smtp	4	512	6	0	95	147
+ssh	0	13	1894	0	79	120
+ftp	0	1	0	2	18	2
+http	5	34	16	0	24410	806
+https	2	27	10	0	1573	4493
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         dns       0.99      0.93      0.96      1030
+        smtp       0.87      0.67      0.76       764
+         ssh       0.98      0.90      0.94      2106
+         ftp       1.00      0.09      0.16        23
+        http       0.93      0.97      0.95     25271
+       https       0.80      0.74      0.77      6105
+
+    accuracy                           0.91     35299
+   macro avg       0.93      0.72      0.76     35299
+weighted avg       0.91      0.91      0.91     35299
