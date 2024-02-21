@@ -3,32 +3,41 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 #Notes: 
-# 1) original paper only uses one head because of complexity
-# 2) original does a very simple addition of the byte and position vectors for positional encoding. Shoudl add in more complex positional encoding
-#    they don't mention the method in the paper though
-# 3) In the paper, they write that they use 2 1-d cnns combined, this doesn't exist in the code though
+# 1) original paper only uses one head because of complexity, I added more heads
+# 2) original does a very simple addition of the byte and position vectors for positional encoding. Shoudl add in more complex positional encoding.
+# 3) In the paper, they write that they use 2 1-d cnns combined, this doesn't exist in the code though, so I implement it.
+
+#Other Recomendations
+# 1) The paper doesn't utilize Layer Normalization, such as that used in the traditional transformer architecture. We could implement layer Normalization at
+        # the end of the MultiheadAttention layer, as well as the end of the CNNs to stabilize training.
+# 2) Introduce a hyperparameter search for several paramaeters, such as embedding size, number of kernels, kernel size, etc. Because of computational concerns,
+        # this can be done on just a subset of the data, and then use the best parameters for the full training.
 
 class Cnn(nn.Module): #I create a separate class for the CNNs, sinve they are used twice
-    def __init__(self, in_channels, kernel_amount, kernel_size):
+    def __init__(self, in_channels, kernel_amount, kernel_size,dropout=0.1):
         super(Cnn, self).__init__()
         self.cnn = nn.Conv1d(in_channels=in_channels, out_channels=kernel_amount, kernel_size=kernel_size)
         self.pooling = nn.AdaptiveMaxPool1d(1) #AdaptiveMaxPool1d is used to make the model more flexible to different input
                                                # sizes for different packet lengths
+        self.dropout = nn.Dropout(p=dropout)
+        
     def forward(self, x):
         conv_out = self.cnn(x)
         conv_out = F.relu(conv_out)
         pooled = self.pooling(conv_out).squeeze(-1)  # Remove the last dimension after pooling, to fit the linear layer
-        return pooled
+        return self.dropout(pooled)
     
 class SAM(nn.Module):
     def __init__(self, num_class,max_byte_len, embed_dim=256, num_heads=1, 
                  conv1_kernel_size=3,
                  conv2_kernel_size=4,
-                 kernels=256):
+                 kernels=256,
+                 attn_dropout=0.1
+                 ):
         super(SAM, self).__init__()
         self.bytes_embedding = nn.Embedding(num_embeddings=300, embedding_dim=embed_dim)  # Assuming 300 as a generic vocabulary size for demonstration
         self.position_embedding = nn.Embedding(num_embeddings=max_byte_len, embedding_dim=embed_dim)  # Assuming 300 as a generic vocabulary size for demonstration
-        self.multihead_attn = nn.MultiheadAttention(embed_dim=embed_dim, num_heads=num_heads) #paper uses 1 head for computational reasons
+        self.multihead_attn = nn.MultiheadAttention(embed_dim=embed_dim, num_heads=num_heads, dropout=attn_dropout) #paper uses 1 head for computational reasons
         self.conv1 = Cnn(in_channels=embed_dim, kernel_amount=kernels, kernel_size=conv1_kernel_size)
         self.conv2 = Cnn(in_channels=embed_dim, kernel_amount=kernels, kernel_size=conv2_kernel_size)
         input_features = embed_dim*2 # We do *2 because we concatenate the output of the two CNNs, which are the same size

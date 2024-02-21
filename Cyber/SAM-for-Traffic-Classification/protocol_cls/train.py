@@ -11,13 +11,17 @@ import torch.optim as optim
 import torch.nn as nn
 import argparse
 import time
+import pandas as pd
 from tqdm import tqdm, trange
-from ShuaImprovedSam import SAM
+from SAM import SAM
 from tool import protocols, load_epoch_data, max_byte_len
-from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
+from sklearn.metrics import precision_recall_fscore_support, confusion_matrix, accuracy_score, classification_report
 import pickle
 import numpy as np
-
+from pathlib import Path
+#set a random seed
+seed = 0
+torch.manual_seed(seed)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class Dataset(torch.utils.data.Dataset):
 	"""docstring for Dataset"""
@@ -72,11 +76,11 @@ def test_epoch(model, test_data):
 		gold = gold.contiguous().view(-1)
 
 		# forward
-		if torch.is_available():
+		if torch.cuda.is_available():
 			torch.cuda.synchronize()
 		start = time.time()
 		pred, score = model(src_seq, src_seq2)
-		if torch.is_available():
+		if torch.cuda.is_available():
 			torch.cuda.synchronize()
 		end = time.time()
 		# 相等位置输出1，否则0
@@ -146,8 +150,18 @@ def main(i, flow_dict):
 		desc='  - (Training Epochs)   ', leave=False):
 
 		train_x, train_y, train_label = load_epoch_data(flow_dict, 'train')
+		dataset = Dataset(x=train_x, y=train_y, label=train_label)
+		#get only subset of the dataset
+		# dataset = torch.utils.data.Subset(dataset, range(1000))
+		num_samples = int(1.0 * len(dataset))
+
+		# Generate random indices without replacement
+		indices = np.random.choice(len(dataset), num_samples, replace=False)
+
+		# Create the subset
+		dataset = torch.utils.data.Subset(dataset, indices)
 		training_data = torch.utils.data.DataLoader(
-				Dataset(x=train_x, y=train_y, label=train_label),
+				dataset,
 				num_workers=0,
 				collate_fn=paired_collate_fn,
 				batch_size=128,
@@ -156,6 +170,7 @@ def main(i, flow_dict):
 		train_loss, train_acc = train_epoch(model, training_data, optimizer)
 
 		test_x, test_y, test_label = load_epoch_data(flow_dict, 'test')
+
 		test_data = torch.utils.data.DataLoader(
 				Dataset(x=test_x, y=test_y, label=test_label),
 				num_workers=0,
@@ -164,31 +179,29 @@ def main(i, flow_dict):
 				shuffle=False
 			)
 		test_acc, score, pred, test_time = test_epoch(model, test_data)
-		with open('results/atten_%d.txt'%i, 'w') as f2:
-			f2.write(' '.join(map('{:.4f}'.format, score)))
-
-		# write F1, PRECISION, RECALL
-		with open('results/metric_%d.txt'%i, 'w') as f3:
-			f3.write('F1 PRE REC\n')
-			p, r, fscore, _ = precision_recall_fscore_support(test_label, pred)
-			for a, b, c in zip(fscore, p, r):
-				# for every cls
-				f3.write('%.2f %.2f %.2f\n'%(a, b, c))
-				f3.flush()
-			if len(fscore) != len(protocols):
-				a = set(pred)
-				b = set(test_label[:,0])
-				f3.write('%s\n%s'%(str(a), str(b)))
-
-		# write Confusion Matrix
-		with open('results/cm_%d.pkl'%i, 'wb') as f4:
-			pickle.dump(confusion_matrix(test_label, pred, normalize='true'), f4)
 
 
 		# write ACC
-		f.write('%.2f %.4f %.6f %.2f\n'%(train_acc, train_loss, test_time, test_acc))
-		f.flush()
+		accuracy = accuracy_score(test_label, pred)
+		precision, recall, fscore, _ = precision_recall_fscore_support(test_label, pred, average='macro')
+		# Generate a confusion matrix
+		conf_matrix = confusion_matrix(test_label, pred)
 
+		# Generate a classification report with label names
+		report = classification_report(test_label, pred, target_names=protocols)
+
+		# Optional: Convert confusion matrix to a DataFrame for better readability
+		conf_matrix_df = pd.DataFrame(conf_matrix, index=protocols, columns=protocols)
+
+		# Write results to a text file
+		# with open('evaluation_results.txt', 'w') as f:
+		# 	f.write(f"Accuracy: {accuracy}\n\n")
+		# 	f.write("Confusion Matrix:\n")
+		# 	conf_matrix_df.to_csv(f, sep='\t')  # Writing the DataFrame to a file for better readability
+		# 	f.write("\nClassification Report:\n")
+		# 	f.write(report)
+
+		print("Evaluation results with class labels written to evaluation_results.txt")
 		# # early stop
 		# if len(loss_list) == 5:
 		# 	if abs(sum(loss_list)/len(loss_list) - train_loss) < 0.005:
@@ -197,13 +210,30 @@ def main(i, flow_dict):
 		# else:
 		# 	loss_list.append(train_loss)
 
-	f.close()
+		# f.close()
+		# return accuracy, p, r, fscore, report
+		return {'accuracy': accuracy, 'precision': precision, 'recall': recall, 'f1': fscore}
 
 
 if __name__ == '__main__':
 	print("Current working directory: ", os.getcwd())
-	for i in range(10):
-		with open(f'Cyber/SAM-for-Traffic-Classification/protocol_cls/data/pro_flows_{i}_noip_fold.pkl', 'rb') as f:
+	scores_dict = {
+		'accuracy': [],
+		'precision': [],
+		'recall': [],
+		'f1': [],
+	}
+	for i in range(3,5):
+		path = Path(__file__).parent / f'data/pro_flows_{i}_noip_fold.pkl'
+		with path.open('rb') as f:
 			flow_dict = pickle.load(f)
 		print('====', i, ' fold validation ====')
-		main(i, flow_dict)
+		scores = main(i, flow_dict)
+		for key, value in scores.items():
+			scores_dict[key].append(value)
+   # average the scores
+	for key, value in scores_dict.items():
+		scores_dict[key] = sum(value) / len(value)
+	with open('scores_SAM2.txt', 'w') as f:
+		for key, value in scores_dict.items():
+			f.write(f'{key}: {value}\n')
