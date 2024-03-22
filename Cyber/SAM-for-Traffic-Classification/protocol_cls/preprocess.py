@@ -85,12 +85,12 @@ def closure(flows):
 			cnt += len(v)
 		print('Total pkts: ', cnt)
 
-	with open('Cyber/SAM-for-Traffic-Classification/protocol_cls/data/pro_flows_regular.pkl', 'wb') as f:
+	with open('pro_flows_regular.pkl', 'wb') as f:
 		pickle.dump(flow_dict, f)
 if __name__ == '__main__':
 	import os
 	print(os.getcwd())
-	pcap = dpkt.pcap.Reader(open('Cyber/SAM-for-Traffic-Classification/protocol_cls/data/202006101400.pcap', 'rb'))
+	pcap = dpkt.pcap.Reader(open('202006101400.pcap', 'rb'))
 	flows = gen_flows(pcap, sample_percentage=1.0)
 	closure(flows)
 

@@ -9,6 +9,7 @@ import random
 import numpy as np
 from preprocess import protocols
 from tqdm import tqdm, trange
+import os
 
 ip_features = {'hl':1,'tos':1,'len':2,'df':1,'mf':1,'ttl':1,'p':1} #not sure what this is for, this section isn't used
 tcp_features = {'off':1,'flags':1,'win':2}
@@ -108,11 +109,12 @@ if __name__ == '__main__':
 	# print(x.shape)
 	# print(y.shape)
 	# print(label[0])
-	with open('Cyber/SAM-for-Traffic-Classification/protocol_cls/pro_flows_regular.pkl','rb') as f:
+	with open('pro_flows_regular.pkl','rb') as f:
 		data = pickle.load(f)
 
 	for i in trange(10, mininterval=2, \
 		desc='  - (Building fold dataset)   ', leave=False):
 		flow_dict = pkt2feature(data, i)
-		with open('pro_flows_%d_noip_fold.pkl'%i, 'wb') as f:
+		os.makedirs('data', exist_ok=True)
+		with open('data/pro_flows_%d_noip_fold.pkl'%i, 'wb') as f:
 			pickle.dump(flow_dict, f)

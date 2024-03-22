@@ -13,7 +13,7 @@ import argparse
 import time
 import pandas as pd
 from tqdm import tqdm, trange
-from SAM import SAM
+from ShuaImprovedSam import SAM
 from tool import protocols, load_epoch_data, max_byte_len
 from sklearn.metrics import precision_recall_fscore_support, confusion_matrix, accuracy_score, classification_report
 import pickle
@@ -223,7 +223,7 @@ if __name__ == '__main__':
 		'recall': [],
 		'f1': [],
 	}
-	for i in range(3,5):
+	for i in range(0,10):
 		path = Path(__file__).parent / f'data/pro_flows_{i}_noip_fold.pkl'
 		with path.open('rb') as f:
 			flow_dict = pickle.load(f)
@@ -234,6 +234,6 @@ if __name__ == '__main__':
    # average the scores
 	for key, value in scores_dict.items():
 		scores_dict[key] = sum(value) / len(value)
-	with open('scores_SAM2.txt', 'w') as f:
+	with open('scores_improvedSam2.txt', 'w') as f:
 		for key, value in scores_dict.items():
 			f.write(f'{key}: {value}\n')
