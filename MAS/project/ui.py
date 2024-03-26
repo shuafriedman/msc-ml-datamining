@@ -87,21 +87,19 @@ class ui:
 
     # Initializes the game and trains the agents
     def train_agents(prefs):
-        # Initialize game
         the_game = game(prefs)
+        agent1 = agent(the_game, 1)
+        agent2 = agent(the_game, 2)
 
         # Train agents
-        agent1 = agent(the_game,1)
-        agent1.train()
-        agent2 = agent(the_game,2)
-        agent2.train()
+        agent1.train(episodes=1000)
+        agent2.train(episodes=1000)
         
         # Print training results
         agent1.print_optimal_strategies()
         agent2.print_optimal_strategies()
 
-        # Return game and trained agents
-        return (the_game,agent1,agent2)
+        return (the_game, agent1, agent2)
 
     # Demonstrates a simulation of the game.
     # The simulation is a number of iterations of the game played according to
@@ -150,16 +148,9 @@ class ui:
                 rand_result2 = random.randint(0,99)
 
                 # Compute strategies and resulting state on success
-                if p1_optimal:
-                    s1 = agent1.optimal_strategies[(game_state[0],game_state[1])]
-                else:
-                    s1 = agent1.get_random_strategy(game_state[0])
+                s1 = agent1.optimal_strategies.get(game_state) if p1_optimal else agent1.get_random_strategy(game_state[0])
+                s2 = agent2.optimal_strategies.get(game_state) if p2_optimal else agent2.get_random_strategy(game_state[1])
                 d1 = g.states[game_state[0]-1].outcomes[s1]
-
-                if p2_optimal:                  
-                    s2 = agent2.optimal_strategies[(game_state[1],game_state[0])]
-                else:
-                    s2 = agent2.get_random_strategy(game_state[1])
                 d2 = g.states[game_state[1]-1].outcomes[s2]
 
                 # Compute success proability
