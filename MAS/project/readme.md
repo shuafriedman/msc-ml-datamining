@@ -44,3 +44,16 @@ These additions and modifications were specifically designed to support the Q-le
 - Learning from Transitions: The `step` method's ability to compute next states and rewards for action pairs allows the agent to learn the dynamics of the game environment implicitly, which is essential for updating Q-values and refining strategies.
 
 In summary, the modifications to the `game` class were specifically tailored to accommodate and support the Q-learning approach, facilitating the agent's ability to learn through interaction with a structured and responsive game environment.
+
+**Changes in the ui.py file:**
+
+In the updated `ui.py` file, the `play_demo` method has been enhanced to dynamically select between learned optimal strategies and random actions for both players, Mario and Bowser, based on user input. This change enables a more interactive demonstration where the effectiveness of reinforcement learning can be observed in action or where the game can explore new strategies beyond those learned. The update introduces flexibility in gameplay, allowing players to test and observe how learned strategies compare to random decision-making within the game's environment.
+
+```python
+s1 = agent1.optimal_strategies.get(game_state) if p1_optimal else agent1.get_random_strategy(game_state)
+s2 = agent2.optimal_strategies.get(game_state) if p2_optimal else agent2.get_random_strategy(game_state)
+d1 = g.states[game_state[0]-1].outcomes.get(s1, game_state[0])
+d2 = g.states[game_state[1]-1].outcomes.get(s2, game_state[1])
+```
+
+This adjustment in strategy selection is a direct response to incorporating a Q-learning approach in `agent.py`, where agents learn optimal strategies through training. The modification in `ui.py` ensures that the game can either follow these learned paths or diverge into randomness, thus offering a comprehensive view of the game dynamics under different strategic conditions.
