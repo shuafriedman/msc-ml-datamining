@@ -16,8 +16,8 @@ done = False
 
 # Here we initialize the preferences for the game.
 prefs = {
-    'R[H2H]':0.5,
-    'R[Win]':1,
+    'R[H2H]':2,
+    'R[Win]':5,
     'Discount':0.9, #changes by Rina Azoulay.
     'P[(1,3)(r,l)|r]':2,
     'P[(1,3)(r,l)|l]':3,

@@ -48,22 +48,18 @@ class agent:
         return random.choice(legal_actions)
     
     def update_q_values(self, state, action, reward, next_state):
-        # Assuming action is a tuple (mario_action, bowser_action)
-        # and the agent's player_number determines which set of actions to consider.
-        player_actions = self.game.get_legal_actions(next_state)[self.player_number - 1]
-        
+        legal_actions = self.game.get_legal_actions(next_state)
+        player_actions = legal_actions[self.player_number - 1]
+        opponent_actions = legal_actions[1 - (self.player_number - 1)]  # 0 if player_number is 1, 1 if player_number is 2
+
         # Now we need to adjust the Q-value update logic to work correctly with this structure.
-        # If the agent represents Mario (player_number 1), then we use mario_action; if Bowser (player_number 2), then bowser_action.
-        # For simplicity, let's just continue with the assumption that we're only considering
-        # the agent's own actions for Q-value updates.
         best_q_value = float('-inf')
         for a in player_actions:
-            # Construct a hypothetical action tuple for Q-value lookup, assuming the opponent does nothing or some default.
-            # This may need adjustment based on how you've structured actions and states.
-            hypothetical_action = (a, None) if self.player_number == 1 else (None, a)
-            q_value = self.q_values.get((next_state, hypothetical_action), 0)
-            if q_value > best_q_value:
-                best_q_value = q_value
+            for opp_a in opponent_actions:  # Loop over all possible opponent actions
+                hypothetical_action = (a, opp_a) if self.player_number == 1 else (opp_a, a)
+                q_value = self.q_values.get((next_state, hypothetical_action), 0)
+                if q_value > best_q_value:
+                    best_q_value = q_value
 
         # Update the Q-value for the state-action pair
         current_q_value = self.q_values.get((state, action), 0)

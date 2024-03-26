@@ -148,8 +148,8 @@ class ui:
                 rand_result2 = random.randint(0,99)
 
                 # Compute strategies and resulting state on success
-                s1 = agent1.optimal_strategies.get(game_state) if p1_optimal else agent1.get_random_strategy(game_state[0])
-                s2 = agent2.optimal_strategies.get(game_state) if p2_optimal else agent2.get_random_strategy(game_state[1])
+                s1 = agent1.optimal_strategies.get(game_state) if p1_optimal else agent1.get_random_strategy(game_state)
+                s2 = agent2.optimal_strategies.get(game_state) if p2_optimal else agent2.get_random_strategy(game_state)
                 d1 = g.states[game_state[0]-1].outcomes[s1]
                 d2 = g.states[game_state[1]-1].outcomes[s2]
 
@@ -199,6 +199,8 @@ class ui:
             p2_total_reward = p2_total_reward + p2_game_reward
             total_moves = total_moves + moves
             print(" Reward = [" + str(p1_game_reward) + "," + str(p2_game_reward) + "]")
+            print("Mario Total Reward: " + str(p1_total_reward))
+            print("Bowser Total Reward: " + str(p2_total_reward))
         # (End demo loop)
 
         # Print outputs
