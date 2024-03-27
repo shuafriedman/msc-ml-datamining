@@ -42,8 +42,6 @@ class agent:
             return random.choice(max_actions)
         
     def choose_opponent_action(self, state, player_number):
-        # Optionally implement logic to choose an action for the opponent
-        # For simplicity, this could randomly choose an action
         legal_actions = self.game.get_legal_actions(state)[player_number - 1]
         return random.choice(legal_actions)
     
@@ -52,7 +50,7 @@ class agent:
         player_actions = legal_actions[self.player_number - 1]
         opponent_actions = legal_actions[1 - (self.player_number - 1)]  # 0 if player_number is 1, 1 if player_number is 2
 
-        # Now we need to adjust the Q-value update logic to work correctly with this structure.
+        # Adjust the Q-value update logic to work correctly with this structure.
         best_q_value = float('-inf')
         for a in player_actions:
             for opp_a in opponent_actions:  # Loop over all possible opponent actions
@@ -82,14 +80,9 @@ class agent:
                 self.optimal_strategies[state] = best_action
                 
     def get_random_strategy(self, state):
-        # Retrieve the legal actions for the agent based on its player number and the current state
         legal_actions = self.game.get_legal_actions(state)[self.player_number - 1]
-
-        # If there are no legal actions (e.g., in a terminal state), return None or a default action
         if not legal_actions:
-            return None
-        
-        # Select and return a random action from the list of legal actions
+            return None        
         return random.choice(legal_actions)
     
     def print_optimal_strategies(self):

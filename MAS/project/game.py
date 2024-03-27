@@ -160,13 +160,11 @@ class game:
         mario_action, bowser_action = action
         mario_next_state = self.states[self.current_state[0]-1].outcomes.get(mario_action, self.current_state[0])
         bowser_next_state = self.states[self.current_state[1]-1].outcomes.get(bowser_action, self.current_state[1])
-
         # Update the current state
         self.current_state = (mario_next_state, bowser_next_state)
-
         # Calculate the reward
         reward = self.R(self.current_state[0], mario_next_state, mario_action, self.current_state[1], bowser_action)
-        done = mario_next_state == 5 or bowser_next_state == 5  # Game ends when either reaches state 5
+        done = mario_next_state == 5 or bowser_next_state == 5 
 
         return self.current_state, reward, done
 
@@ -174,7 +172,7 @@ class game:
         # State is a tuple (mario_position, bowser_position)
         mario_legal_actions = self.states[state[0]-1].actions
         bowser_legal_actions = self.states[state[1]-1].actions
-        return (mario_legal_actions, bowser_legal_actions)  # Return actions as a tuple for both players
+        return (mario_legal_actions, bowser_legal_actions)  
 
     def get_all_states(self):
         # Assuming states are numbered 1 through 6 for both Mario and Bowser
