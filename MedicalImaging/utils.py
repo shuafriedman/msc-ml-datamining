@@ -17,7 +17,6 @@ class CustomImageDataset(Dataset):
 
     def __getitem__(self, idx):
         img = self.images[idx]
-        
         # Convert grayscale images to RGB
         if img.mode != 'RGB':
             img = img.convert('RGB')
@@ -54,6 +53,16 @@ def get_model(model_name: str, num_classes: int):
         param.required_grad = False
     in_features = model.classifier[-1].in_features
     features = list(model.classifier.children())[:-1] 
-    features.extend([nn.Linear(in_features, num_classes)])
-    model.classifier = nn.Sequential(*features)     
+    # features.extend([nn.Linear(in_features, num_classes)])
+    # model.classifier = nn.Sequential(*features)
+    #extend with two linear layers
+    features.extend([nn.Sequential(
+                            nn.Linear(in_features, 256), 
+                            nn.ReLU(), 
+                            nn.Dropout(0.4), 
+                            nn.Linear(256, num_classes)
+                            )
+                    ]
+    )
+    model.classifier = nn.Sequential(*features)
     return model
