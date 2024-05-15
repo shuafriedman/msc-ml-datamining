@@ -5,12 +5,12 @@ def get_args():
     parser = argparse.ArgumentParser(description="Configuration for training and inference")
     parser.add_argument('--data_path', type=str, default='msc-ml-datamining/MedicalImaging/medical_images/Covid19_dataset_project/data', help='Path to the dataset')
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for training and inference')
-    parser.add_argument('--learning_rate', type=float, default=0.001, help='Learning rate for the optimizer')
+    parser.add_argument('--learning_rate', type=float, default=0.0001, help='Learning rate for the optimizer')
     parser.add_argument('--random_state', type=int, default=42, help='Random state for data splitting')
     parser.add_argument('--train_size', type=float, default=0.8, help='Training size for data splitting')
     parser.add_argument('--num_epochs', type=int, default=10, help='Number of epochs for training')
     parser.add_argument('--run_kfold', type=bool, default=True, help='Run k-fold cross validation')
-    parser.add_argument('--k_folds', type=int, default=5, help='Number of folds for k-fold cross validation')
+    parser.add_argument('--k_folds', type=int, default=4, help='Number of folds for k-fold cross validation')
     args = parser.parse_args()
     return args
 
@@ -32,16 +32,16 @@ def get_transforms(images):
     # mean = torch.stack([torch.mean(img) for img in images]).mean()
     # std = torch.stack([torch.std(img) for img in images]).mean()
     train_transform = transforms.Compose([
-        transforms.RandomResizedCrop(224),
+        transforms.Resize([224, 224]),
         transforms.RandomHorizontalFlip(),
+        transforms.RandomVerticalFlip(),
         transforms.ToTensor(),
-        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+        transforms.Normalize(mean=0.5, std=0.5)
     ])
 
     test_transform = transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
+        transforms.Resize([224, 224]),
         transforms.ToTensor(),
-        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+        transforms.Normalize(mean=0.5, std=0.5)
     ])
     return {"train": train_transform, "test": test_transform}

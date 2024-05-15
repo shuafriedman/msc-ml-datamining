@@ -5,6 +5,7 @@ from utils import load_images_from_folder, get_model, CustomImageDataset
 from config import *
 import utils
 from tqdm import tqdm
+import pandas as pd
 
 def train_and_eval(dataloaders, num_classes: int):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -12,63 +13,68 @@ def train_and_eval(dataloaders, num_classes: int):
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
+    metrics = []  # List to store metrics for each epoch
+
+    max_train_accuracy = 0
+    max_validation_accuracy = 0
+
     for epoch in range(NUM_EPOCHS):
-        # Set model to training mode
         model.train()
-        train_loader = tqdm(dataloaders['train'], desc=f"Epoch {epoch + 1}/{NUM_EPOCHS} Training")
+        train_correct = train_total = 0
         running_loss = 0.0
-        correct = total = 0
-
-        for inputs, labels in train_loader:
+        
+        for inputs, labels in tqdm(dataloaders['train'], desc=f"Epoch {epoch + 1}/{NUM_EPOCHS} Training"):
             inputs, labels = inputs.to(device), labels.to(device)
-
-            # Forward pass
             optimizer.zero_grad()
             outputs = model(inputs)
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
 
-            # Statistics
             _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
+            train_correct += (predicted == labels).sum().item()
+            train_total += labels.size(0)
             running_loss += loss.item()
 
-        # Calculate training accuracy and average loss
-        train_accuracy = 100 * correct / total
+        train_accuracy = 100 * train_correct / train_total
         train_loss = running_loss / len(dataloaders['train'])
-        
-        # Validate on training and validation data
-        # train_val_accuracy = validate_model(model, dataloaders['train'], device, "Train")
-        val_accuracy = validate_model(model, dataloaders['test'], device, "Validation")
+        max_train_accuracy = max(max_train_accuracy, train_accuracy)
 
-        # Display results
-        print(f'Epoch [{epoch+1}/{NUM_EPOCHS}] - '
-              f'Train Loss: {train_loss:.4f}, '
-              f'Train Accuracy: {train_accuracy:.2f}%, '
-            #   f'Train Validation Accuracy: {train_val_accuracy:.2f}%, '
-              f'Validation Accuracy: {val_accuracy:.2f}%')
+        validation_accuracy = validate_model(model, dataloaders['test'], device)
+        max_validation_accuracy = max(max_validation_accuracy, validation_accuracy)
 
-def validate_model(model, dataloader, device, mode="Validation"):
-    model.eval()  # Set model to evaluation mode
-    val_loader = tqdm(dataloader, desc=f"{mode} Accuracy Calculation")
+        # Store metrics
+        metrics.append({
+            'epoch': epoch + 1,
+            'train_accuracy': train_accuracy,
+            'max_train_accuracy': max_train_accuracy,
+            'validation_accuracy': validation_accuracy,
+            'max_validation_accuracy': max_validation_accuracy,
+            'train_loss': train_loss
+        })
+
+        print(f"Epoch {epoch+1}: Train Acc: {train_accuracy:.2f}%, Max Train Acc: {max_train_accuracy:.2f}%, "
+              f"Val Acc: {validation_accuracy:.2f}%, Max Val Acc: {max_validation_accuracy:.2f}%")
+
+    # Convert metrics to DataFrame and save to CSV
+    metrics_df = pd.DataFrame(metrics)
+    metrics_df.to_csv('training_metrics.csv', index=False)
+
+def validate_model(model, dataloader, device):
+    model.eval()
     correct = total = 0
-
     with torch.no_grad():
-        for inputs, labels in val_loader:
+        for inputs, labels in dataloader:
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = model(inputs)
             _, predicted = torch.max(outputs.data, 1)
             correct += (predicted == labels).sum().item()
             total += labels.size(0)
-
     accuracy = 100 * correct / total
-    val_loader.close()
     return accuracy
 
 if __name__ == "__main__":
-    folds = 4 if not RUN_KFOLD else KFOLDS
+    folds = 2 if not RUN_KFOLD else KFOLDS
     kfold = KFold(n_splits=folds, shuffle=True, random_state=RANDOM_STATE)
     image_dict = load_images_from_folder(DATA_PATH)
     all_images = []
@@ -79,9 +85,8 @@ if __name__ == "__main__":
     
     for fold, (train_ids, test_ids) in enumerate(kfold.split(all_images)):
         train_images, test_images = [all_images[i] for i in train_ids], [all_images[i] for i in test_ids]
-        print(len(train_images), len(test_images))
         train_labels, test_labels = [all_labels[i] for i in train_ids], [all_labels[i] for i in test_ids]
-        transforms = get_transforms(train_images)
+        transforms = get_transforms(train_images)  # Assuming this prepares appropriate transforms
         datasets = {
             "train": CustomImageDataset(train_images, train_labels, transform=transforms['train']),
             "test": CustomImageDataset(test_images, test_labels, transform=transforms['test'])
