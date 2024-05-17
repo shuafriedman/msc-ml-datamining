@@ -7,8 +7,8 @@ def get_args():
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for training and inference')
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='Learning rate for the optimizer')
     parser.add_argument('--random_state', type=int, default=42, help='Random state for data splitting')
-    parser.add_argument('--train_size', type=float, default=0.8, help='Training size for data splitting')
-    parser.add_argument('--num_epochs', type=int, default=10, help='Number of epochs for training')
+    parser.add_argument('--train_size', type=float, default=0.6, help='Training size for data splitting')
+    parser.add_argument('--num_epochs', type=int, default=1, help='Number of epochs for training')
     parser.add_argument('--run_kfold', type=bool, default=True, help='Run k-fold cross validation')
     parser.add_argument('--k_folds', type=int, default=4, help='Number of folds for k-fold cross validation')
     args = parser.parse_args()
@@ -27,6 +27,7 @@ NUM_EPOCHS = args.num_epochs
 LEARNING_RATE = args.learning_rate
 RUN_KFOLD = args.run_kfold
 KFOLDS = args.k_folds
+MODELS = ['resnet50', 'vgg16']
 # Data transformations
 def get_transforms(images):
     # mean = torch.stack([torch.mean(img) for img in images]).mean()
