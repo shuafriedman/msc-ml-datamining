@@ -98,8 +98,8 @@ if __name__ == "__main__":
             }
             model = get_model(model_name=model_name, num_classes=len(image_dict))
             result = train_and_eval(model, dataloaders, num_classes=len(image_dict))
-            result.to_csv(f"results_{model_name}_fold_{fold}.csv", index=False)
-            results[f"{model_name}_fold_{fold}"] = result
+            result.to_csv(f"results_{model_name}_fold_{fold+1}.csv", index=False)
+            results[f"{model_name}_fold_{fold+1}"] = result
     #model with the highest aaverage max validation accuracy across all folds
     max_val_acc = 0
     best_model = None
@@ -109,7 +109,4 @@ if __name__ == "__main__":
             max_val_acc = avg_max_val_acc
             best_model = model_name
     print(f"Best model: {best_model}, Average max validation accuracy: {max_val_acc}")
-    # #results summary, create several metrics that are useful
-    # summary = pd.DataFrame(results)
-    # summary.to_csv("results_summary.csv", index=False)
     
