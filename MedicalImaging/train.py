@@ -7,7 +7,7 @@ import utils
 from tqdm import tqdm
 import pandas as pd
 
-def train_and_eval(model, dataloaders, num_classes: int, lr: float = LEARNING_RATE):
+def train_and_eval(model, dataloaders, model_name, fold, num_classes: int, lr: float = LEARNING_RATE, num_epochs: int = None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=lr)
@@ -18,7 +18,8 @@ def train_and_eval(model, dataloaders, num_classes: int, lr: float = LEARNING_RA
     max_test_accuracy = 0
     best_epoch = 0
     best_model_state = None
-    for epoch in range(NUM_EPOCHS):
+    epochs = num_epochs if num_epochs else NUM_EPOCHS
+    for epoch in range(epochs):
         model.train()
         train_correct = train_total = 0
         running_loss = 0.0
@@ -40,7 +41,7 @@ def train_and_eval(model, dataloaders, num_classes: int, lr: float = LEARNING_RA
         train_loss = running_loss / len(dataloaders['train'])
         max_train_accuracy = max(max_train_accuracy, train_accuracy)
 
-        test_accuracy = validate_model(model, dataloaders, device)
+        test_accuracy = validate_model(model, dataloaders["test"], device)
         if test_accuracy > max_test_accuracy:
             max_test_accuracy = test_accuracy
             best_epoch = epoch + 1
@@ -57,18 +58,19 @@ def train_and_eval(model, dataloaders, num_classes: int, lr: float = LEARNING_RA
             'train_loss': train_loss
         })
 
-        print(f"Epoch {epoch+1}: Train Acc: {train_accuracy:.2f}%, Max Train Acc: {max_train_accuracy:.2f}%, "
+        print(f"{model_name} Fold {fold+1}/{folds} "
+              f"Epoch {epoch+1}: Train Acc: {train_accuracy:.2f}%, Max Train Acc: {max_train_accuracy:.2f}%, "
               f"Test Acc: {test_accuracy:.2f}%, Max Test Acc: {max_test_accuracy:.2f}%, Best Epoch: {best_epoch}")
 
     # Convert metrics to DataFrame and save to CSV
     metrics_df = pd.DataFrame(metrics)
     return metrics_df, best_model_state
 
-def validate_model(model, dataloaders, device):
+def validate_model(model, dataloader, device):
     model.eval()
     correct = total = 0
     with torch.no_grad():
-        for inputs, labels in dataloaders["test"]:
+        for inputs, labels in dataloader:
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = model(inputs)
             _, predicted = torch.max(outputs.data, 1)
@@ -107,7 +109,7 @@ if __name__ == "__main__":
                 "test": torch.utils.data.DataLoader(datasets["test"], batch_size=BATCH_SIZE, shuffle=False),
             }
             model = get_model(model_name=model_name, num_classes=len(image_dict))
-            result, _ = train_and_eval(model, dataloaders, num_classes=len(image_dict))
+            result, _ = train_and_eval(model, dataloaders,  model_name, fold, num_classes=len(image_dict),)
             result.to_csv(f"results_{model_name}_fold_{fold+1}.csv", index=False)
             results[f"{model_name}_fold_{fold+1}"] = result
             # check if this is the best model
@@ -129,7 +131,7 @@ if __name__ == "__main__":
             "train": torch.utils.data.DataLoader(CustomImageDataset(all_images, all_labels, transform=transforms['train']), batch_size=BATCH_SIZE, shuffle=True),
             "test": torch.utils.data.DataLoader(final_test_data_dataset, batch_size=BATCH_SIZE, shuffle=False)
         }
-        result, best_model_state = train_and_eval(model, dataloaders, num_classes=len(image_dict), lr=lr)
+        result, best_model_state = train_and_eval(model,  dataloaders, best_model_name, 0, num_classes=len(image_dict), lr=lr, num_epochs=NUM_EPOCHS_FOR_FINAL_MODEL)
         result.to_csv(f"final_results_{best_model_name}_lr_{lr}.csv", index=False)
 
         if result['max_test_accuracy'].max() > best_overall_accuracy:
