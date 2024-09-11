@@ -3,6 +3,7 @@ import torch.optim as optim
 from utils import load_images_from_folder, get_model, CustomImageDataset, load_images_for_test_data
 from config import *
 import pandas as pd
+from tqdm import tqdm
 
 def train_and_eval(model, dataloaders, model_name, lr, num_classes: int, num_epochs: int = None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -21,7 +22,7 @@ def train_and_eval(model, dataloaders, model_name, lr, num_classes: int, num_epo
         train_correct = train_total = 0
         running_loss = 0.0
         
-        for inputs, labels in dataloaders['train']:
+        for inputs, labels in tqdm(dataloaders['train'], desc=f"Epoch {epoch + 1}/{NUM_EPOCHS} Training"):
             inputs, labels = inputs.to(device), labels.to(device)
             optimizer.zero_grad()
             outputs = model(inputs)
@@ -55,7 +56,9 @@ def train_and_eval(model, dataloaders, model_name, lr, num_classes: int, num_epo
             'lr': lr,
             'model_name': model_name
         })
-
+        print(f"{model_name} "
+              f"Epoch {epoch+1}: Train Acc: {train_accuracy:.2f}%, Max Train Acc: {max_train_accuracy:.2f}%, "
+              f"Test Acc: {test_accuracy:.2f}%, Max Test Acc: {max_test_accuracy:.2f}%, Best Epoch: {best_epoch}")
     metrics_df = pd.DataFrame(metrics)
     return metrics_df, best_model_state
 
@@ -81,7 +84,9 @@ def get_config_and_transforms(model):
     return get_transforms(mean=config[0], std=config[1], resize=config[2])
 
 if __name__ == "__main__":
+    print("Loading in images for train")
     image_dict = load_images_from_folder(DATA_PATH)
+    print("Loading in images for test")
     final_test_data = load_images_for_test_data(TEST_DATA_PATH)
 
     all_images = []
@@ -98,7 +103,9 @@ if __name__ == "__main__":
     all_metrics = []
 
     for model_name in MODELS:
+        print(f"Getting Model: {model_name}")
         model = get_model(model_name=model_name, num_classes=len(image_dict))
+        print("Getting transformations")
         transforms = get_config_and_transforms(model)
 
         # Create dataloaders for training and test data
@@ -120,6 +127,7 @@ if __name__ == "__main__":
 
         # Train and evaluate for each learning rate
         for lr in learning_rates:
+            print(f"Starting training for lr: {lr}")
             result, model_state = train_and_eval(model, dataloaders, model_name, lr, num_classes=len(image_dict))
             result.to_csv(f"results_{model_name}_lr_{lr}.csv", index=False)
             all_metrics.append(result)

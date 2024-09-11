@@ -7,6 +7,7 @@ class ResNetModel(nn.Module):
     def __init__(self, num_classes: int, freeze_features: bool = True):
         super(ResNetModel, self).__init__()
         self.model = models.resnet50(pretrained=True)
+        self.config = None
         if freeze_features:
             for param in self.model.parameters():
                 param.required_grad = False
@@ -25,6 +26,7 @@ class VGGModel(nn.Module):
     def __init__(self, num_classes: int, freeze_features: bool = True):
         super(VGGModel, self).__init__()
         self.model = models.vgg16(pretrained=True)
+        self.config = None
         if freeze_features:
             for param in self.model.features.parameters():
                 param.required_grad = False
