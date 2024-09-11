@@ -4,7 +4,7 @@ import torch
 def get_args():
     parser = argparse.ArgumentParser(description="Configuration for training and inference")
     parser.add_argument('--data_path', type=str, default='msc-ml-datamining/MedicalImaging/medical_images/Covid19_dataset_project/data', help='Path to the dataset')
-    parser.add_argument('--batch_size', type=int, default=16, help='Batch size for training and inference')
+    parser.add_argument('--batch_size', type=int, default=8, help='Batch size for training and inference')
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='Learning rate for the optimizer')
     parser.add_argument('--random_state', type=int, default=42, help='Random state for data splitting')
     parser.add_argument('--train_size', type=float, default=0.6, help='Training size for data splitting')
@@ -28,23 +28,24 @@ NUM_EPOCHS_FOR_FINAL_MODEL = 10
 LEARNING_RATE = args.learning_rate
 RUN_KFOLD = args.run_kfold
 KFOLDS = args.k_folds
-MODELS = ['resnet50', 'vgg16']
+# MODELS = ['resnet50', 'vgg16']
+MODELS = ['eva']
 TEST_DATA_PATH = "test"
 # Data transformations
-def get_transforms():
+def get_transforms(mean=0.5, std=0.5, resize=(224, 224)):
     # mean = torch.stack([torch.mean(img) for img in images]).mean()
     # std = torch.stack([torch.std(img) for img in images]).mean()
     train_transform = transforms.Compose([
-        transforms.Resize([224, 224]),
+        transforms.Resize(resize),
         transforms.RandomHorizontalFlip(),
         transforms.RandomVerticalFlip(),
         transforms.ToTensor(),
-        transforms.Normalize(mean=0.5, std=0.5)
+        transforms.Normalize(mean=mean, std=std)
     ])
 
     test_transform = transforms.Compose([
-        transforms.Resize([224, 224]),
+        transforms.Resize(resize),
         transforms.ToTensor(),
-        transforms.Normalize(mean=0.5, std=0.5)
+        transforms.Normalize(mean=mean, std=std)
     ])
     return {"train": train_transform, "test": test_transform}

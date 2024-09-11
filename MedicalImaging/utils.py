@@ -7,7 +7,7 @@ import os
 from PIL import Image
 from config import BATCH_SIZE
 import numpy as np
-from model import ResNetModel, VGGModel
+from model import ResNetModel, VGGModel, Eva
 class CustomImageDataset(Dataset):
     def __init__(self, images, labels, transform=None):
         self.images = images
@@ -55,6 +55,8 @@ def get_model(model_name: str, num_classes: int):
         model = ResNetModel(num_classes)
     elif model_name == 'vgg16':
         model = VGGModel(num_classes)
+    elif model_name == 'eva':
+        model = Eva(num_classes)
     else:
         raise ValueError(f"Model {model_name} not supported")
     return model

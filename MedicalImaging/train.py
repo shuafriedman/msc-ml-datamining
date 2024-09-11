@@ -78,15 +78,23 @@ def validate_model(model, dataloader, device):
             total += labels.size(0)
     accuracy = 100 * correct / total
     return accuracy
-
+def get_config_and_transforms(model):
+    # if model.config:
+    #     return model.config['mean'], model.config['std'], (model.config['input_size'][1], model.config['input_size'][2])
+    # else:
+    #     return 0.5, 0.5, (224, 224)
+    if model.config:
+        config = model.config["mean"], model.config["std"], (model.config["input_size"][1], model.config["input_size"][2])
+    else:
+        config = 0.5, 0.5, (224, 224)
+        
+    return get_transforms(mean=config[0], std=config[1], resize=config[2])
+    
 if __name__ == "__main__":
     folds = 2 if not RUN_KFOLD else KFOLDS
     kfold = KFold(n_splits=folds, shuffle=True, random_state=RANDOM_STATE)
     image_dict = load_images_from_folder(DATA_PATH)
     final_test_data = load_images_for_test_data(TEST_DATA_PATH)
-    transforms = get_transforms()  # Assuming this prepares appropriate transforms
-
-    final_test_data_dataset = CustomImageDataset(final_test_data["data"], final_test_data["labels"], transform=transforms['test'])
 
     all_images = []
     all_labels = []
@@ -96,8 +104,13 @@ if __name__ == "__main__":
     results = {}
     best_model_name = None
     max_val_acc = 0
-    for fold, (train_ids, test_ids) in enumerate(kfold.split(all_images)):
-        for model_name in MODELS:
+    for model_name in MODELS:
+        model = get_model(model_name=model_name, num_classes=len(image_dict))
+        transforms = get_config_and_transforms(model)
+        
+        final_test_data_dataset= CustomImageDataset(final_test_data["data"], final_test_data["labels"], transform=transforms['test'])
+        
+        for fold, (train_ids, test_ids) in enumerate(kfold.split(all_images)):
             train_images, test_images = [all_images[i] for i in train_ids], [all_images[i] for i in test_ids]
             train_labels, test_labels = [all_labels[i] for i in train_ids], [all_labels[i] for i in test_ids]
             datasets = {
@@ -108,7 +121,6 @@ if __name__ == "__main__":
                 "train": torch.utils.data.DataLoader(datasets["train"], batch_size=BATCH_SIZE, shuffle=True),
                 "test": torch.utils.data.DataLoader(datasets["test"], batch_size=BATCH_SIZE, shuffle=False),
             }
-            model = get_model(model_name=model_name, num_classes=len(image_dict))
             result, _ = train_and_eval(model, dataloaders,  model_name, fold, num_classes=len(image_dict),)
             result.to_csv(f"results_{model_name}_fold_{fold+1}.csv", index=False)
             results[f"{model_name}_fold_{fold+1}"] = result
