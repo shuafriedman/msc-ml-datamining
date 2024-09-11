@@ -42,13 +42,13 @@ def load_images_from_folder(folder):
         data[label] = images
     return data
 
-def load_images_for_inference(path: str):
-    images = []
-    for filename in os.listdir(path):
-        image_path = os.path.join(path, filename)
-        image = Image.open(image_path)
-        images.append(image)
-    return images
+# def load_images_for_inference(path: str):
+#     images = []
+#     for filename in os.listdir(path):
+#         image_path = os.path.join(path, filename)
+#         image = Image.open(image_path)
+#         images.append(image)
+#     return images
 
 def get_model(model_name: str, num_classes: int):
     if model_name == 'resnet50':
@@ -58,3 +58,22 @@ def get_model(model_name: str, num_classes: int):
     else:
         raise ValueError(f"Model {model_name} not supported")
     return model
+
+def load_images_for_test_data(path: str):
+    data = []
+    labels = []
+    #folders = Covid, Normal, Viral Pneumonia
+    for folder in os.listdir(path):
+        for filename in os.listdir(os.path.join(path, folder)):
+            image_path = os.path.join(path, folder, filename)
+            image = Image.open(image_path)
+            if image.mode != 'RGB':
+                image = image.convert('RGB')
+            data.append(image)
+            labels.append(folder)
+    labels = np.array(labels)
+    labels = np.where(labels == 'Covid', 2, labels)
+    labels = np.where(labels == 'Normal', 1, labels)
+    labels = np.where(labels == 'Viral Pneumonia', 0, labels)
+    labels = labels.astype(int)  # Ensure labels are integers
+    return {"data": data, "labels": labels}
