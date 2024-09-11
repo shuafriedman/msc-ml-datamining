@@ -1,11 +1,10 @@
 import torch
 import torch.optim as optim
-from sklearn.model_selection import KFold
 from utils import load_images_from_folder, get_model, CustomImageDataset, load_images_for_test_data
 from config import *
 import pandas as pd
 
-def train_and_eval(model, dataloaders, model_name, fold, lr, num_classes: int, num_epochs: int = None):
+def train_and_eval(model, dataloaders, model_name, lr, num_classes: int, num_epochs: int = None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=lr)
@@ -54,8 +53,7 @@ def train_and_eval(model, dataloaders, model_name, fold, lr, num_classes: int, n
             'best_epoch': best_epoch,
             'train_loss': train_loss,
             'lr': lr,
-            'model_name': model_name,
-            'fold': fold + 1
+            'model_name': model_name
         })
 
     metrics_df = pd.DataFrame(metrics)
@@ -83,9 +81,8 @@ def get_config_and_transforms(model):
     return get_transforms(mean=config[0], std=config[1], resize=config[2])
 
 if __name__ == "__main__":
-    folds = 2 if not RUN_KFOLD else KFOLDS
-    kfold = KFold(n_splits=folds, shuffle=True, random_state=RANDOM_STATE)
     image_dict = load_images_from_folder(DATA_PATH)
+    final_test_data = load_images_for_test_data(TEST_DATA_PATH)
 
     all_images = []
     all_labels = []
@@ -104,34 +101,36 @@ if __name__ == "__main__":
         model = get_model(model_name=model_name, num_classes=len(image_dict))
         transforms = get_config_and_transforms(model)
 
+        # Create dataloaders for training and test data
+        dataloaders = {
+            "train": torch.utils.data.DataLoader(
+                CustomImageDataset(all_images, all_labels, transform=transforms['train']), 
+                batch_size=BATCH_SIZE, shuffle=True
+            ),
+            "test": torch.utils.data.DataLoader(
+                CustomImageDataset(final_test_data["data"], final_test_data["labels"], transform=transforms['test']), 
+                batch_size=BATCH_SIZE, shuffle=False
+            )
+        }
+
         max_val_acc_model = 0
         best_model_state = None
         best_lr = None
         best_result = None
 
-        for fold, (train_ids, test_ids) in enumerate(kfold.split(all_images)):
-            train_images, test_images = [all_images[i] for i in train_ids], [all_images[i] for i in test_ids]
-            train_labels, test_labels = [all_labels[i] for i in train_ids], [all_labels[i] for i in test_ids]
-            datasets = {
-                "train": CustomImageDataset(train_images, train_labels, transform=transforms['train']),
-                "test": CustomImageDataset(test_images, test_labels, transform=transforms['test'])
-            }
-            dataloaders = {
-                "train": torch.utils.data.DataLoader(datasets["train"], batch_size=BATCH_SIZE, shuffle=True),
-                "test": torch.utils.data.DataLoader(datasets["test"], batch_size=BATCH_SIZE, shuffle=False),
-            }
+        # Train and evaluate for each learning rate
+        for lr in learning_rates:
+            result, model_state = train_and_eval(model, dataloaders, model_name, lr, num_classes=len(image_dict))
+            result.to_csv(f"results_{model_name}_lr_{lr}.csv", index=False)
+            all_metrics.append(result)
 
-            for lr in learning_rates:
-                result, model_state = train_and_eval(model, dataloaders, model_name, fold, lr, num_classes=len(image_dict))
-                result.to_csv(f"results_{model_name}_fold_{fold+1}_lr_{lr}.csv", index=False)
-                all_metrics.append(result)
-
-                avg_max_val_acc = result['max_test_accuracy'].mean()
-                if avg_max_val_acc > max_val_acc_model:
-                    max_val_acc_model = avg_max_val_acc
-                    best_model_state = model_state
-                    best_lr = lr
-                    best_result = result
+            # Calculate the average max test accuracy for each learning rate
+            avg_max_val_acc = result['max_test_accuracy'].mean()
+            if avg_max_val_acc > max_val_acc_model:
+                max_val_acc_model = avg_max_val_acc
+                best_model_state = model_state
+                best_lr = lr
+                best_result = result
 
         best_model_state_per_model[model_name] = best_model_state
         best_lr_per_model[model_name] = best_lr
