@@ -8,7 +8,7 @@ def get_args():
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='Learning rate for the optimizer')
     parser.add_argument('--random_state', type=int, default=42, help='Random state for data splitting')
     parser.add_argument('--train_size', type=float, default=0.6, help='Training size for data splitting')
-    parser.add_argument('--num_epochs', type=int, default=3, help='Number of epochs for training')
+    parser.add_argument('--num_epochs', type=int, default=5, help='Number of epochs for training')
     parser.add_argument('--run_kfold', type=bool, default=True, help='Run k-fold cross validation')
     parser.add_argument('--k_folds', type=int, default=3, help='Number of folds for k-fold cross validation')
     args = parser.parse_args()
@@ -29,7 +29,7 @@ LEARNING_RATE = args.learning_rate
 RUN_KFOLD = args.run_kfold
 KFOLDS = args.k_folds
 # MODELS = ['resnet50', 'vgg16']
-MODELS = ['resnet50']
+MODELS = ['resnet50', 'vgg16', 'eva']
 TEST_DATA_PATH = "test"
 # Data transformations
 def get_transforms(mean=0.5, std=0.5, resize=(224, 224)):
