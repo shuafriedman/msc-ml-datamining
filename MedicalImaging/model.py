@@ -2,6 +2,8 @@ from torch import nn
 from torch.optim import Adam
 from torchvision import models
 import timm
+
+
 #create a class for an imported resnet model from torch. Replce the last layer with a new layer with the number of classes
 class ResNetModel(nn.Module):
     def __init__(self, num_classes: int, freeze_features: bool = True):
@@ -10,7 +12,7 @@ class ResNetModel(nn.Module):
         self.config = None
         if freeze_features:
             for param in self.model.parameters():
-                param.required_grad = False
+                param.requires_grad = False
         in_features = self.model.fc.in_features
         self.model.fc = nn.Sequential(
                                 nn.Linear(in_features, 256),
@@ -18,6 +20,10 @@ class ResNetModel(nn.Module):
                                 nn.Dropout(0.3),
                                 nn.Linear(256, num_classes)
                             )
+        for m in self.model.classifier.modules():
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                nn.init.zeros_(m.bias)
 
     def forward(self, x):
         return self.model(x)
@@ -29,7 +35,7 @@ class VGGModel(nn.Module):
         self.config = None
         if freeze_features:
             for param in self.model.features.parameters():
-                param.required_grad = False
+                param.requires_grad = False
         in_features = self.model.classifier[-1].in_features
         features = list(self.model.classifier.children())[:-1] 
         features.extend([nn.Sequential(
@@ -41,6 +47,10 @@ class VGGModel(nn.Module):
                         ]
         )
         self.model.classifier = nn.Sequential(*features)
+        for m in self.model.classifier.modules():
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                nn.init.zeros_(m.bias)
 
     def forward(self, x):
         return self.model(x)
@@ -53,14 +63,37 @@ class Eva(nn.Module):
 
         if freeze_features:
             for param in self.model.parameters():
-                param.required_grad = False
+                param.requires_grad = False
         in_features = self.model.head.in_features
          
         self.model.head= nn.Sequential(
-                                nn.Linear(in_features, 256), 
-                                nn.ReLU(),
-                                nn.Dropout(0.3), 
-                                nn.Linear(256, num_classes)
+                                nn.Linear(in_features, num_classes)
                                 )
+        for m in self.model.head.modules():
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                nn.init.zeros_(m.bias)
+    def forward(self, x):
+        return self.model(x)
+
+class Vit(nn.Module):
+    def __init__(self, num_classes: int, freeze_features: bool = True):
+        super(Vit, self).__init__()
+        self.model = timm.create_model('vit_base_patch16_224', pretrained=True)
+        self.config= timm.data.resolve_model_data_config(self.model)
+
+        if freeze_features:
+            for param in self.model.parameters():
+                param.requires_grad = False
+        in_features = self.model.head.in_features
+         
+        self.model.head = nn.Sequential(
+            nn.Linear(in_features, num_classes)
+        )
+        for m in self.model.head.modules():
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                nn.init.zeros_(m.bias)
+
     def forward(self, x):
         return self.model(x)
