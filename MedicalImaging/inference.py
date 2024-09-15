@@ -95,11 +95,18 @@ if __name__ == "__main__":
             for batch_idx, img_name in enumerate(image_files[i * BATCH_SIZE: (i + 1) * BATCH_SIZE]):
                 logging.info(f"Predictions for {img_name} with {model_name}: {predictions[batch_idx]} (True label: {labels[batch_idx]})")
 
-        # calculate the accuracy
-        correct = sum([1 for pred, true in zip(all_predictions, all_true_labels) if pred == true])
+        # Convert true labels to integer indices for comparison
+        correct = 0
+        for pred, true_label in zip(all_predictions, all_true_labels):
+            if str(pred) == str(true_label):
+                correct += 1
+
+        # Calculate accuracy
         total = len(all_predictions)
-        accuracy = correct / total * 100
+        accuracy = correct / total * 100 if total > 0 else 0
+
         logging.info(f"Model {model_name} accuracy: {accuracy:.2f}%")
+
 
         # Create a DataFrame to store the image names, predictions, and true labels
         df = pd.DataFrame({
