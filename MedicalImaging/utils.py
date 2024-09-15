@@ -42,14 +42,21 @@ def load_images_from_folder(folder):
         data[label] = images
     return data
 
-# def load_images_for_inference(path: str):
-#     images = []
-#     for filename in os.listdir(path):
-#         image_path = os.path.join(path, filename)
-#         image = Image.open(image_path)
-#         images.append(image)
-#     return images
-
+def create_test_dataset(image_folder: str, transform):
+    images = []
+    image_files = []
+    
+    for img_name in os.listdir(image_folder):
+        img_path = os.path.join(image_folder, img_name)
+        img = Image.open(img_path).convert("RGB")  # Convert to RGB
+        
+        images.append(img)
+        image_files.append(img_name)
+    
+    # Creating a dummy label list for compatibility with CustomImageDataset
+    labels = [0] * len(images)  # Placeholder labels, not used in inference
+    
+    return CustomImageDataset(images, labels, transform), image_files
 def get_model(model_name: str, num_classes: int):
     if model_name == 'resnet50':
         model = ResNetModel(num_classes)
