@@ -20,7 +20,7 @@ class ResNetModel(nn.Module):
                                 nn.Dropout(0.3),
                                 nn.Linear(256, num_classes)
                             )
-        for m in self.model.classifier.modules():
+        for m in self.model.fc.modules():
             if isinstance(m, nn.Linear):
                 nn.init.xavier_uniform_(m.weight)
                 nn.init.zeros_(m.bias)
@@ -47,7 +47,7 @@ class VGGModel(nn.Module):
                         ]
         )
         self.model.classifier = nn.Sequential(*features)
-        for m in self.model.classifier.modules():
+        for m in self.model.modules():
             if isinstance(m, nn.Linear):
                 nn.init.xavier_uniform_(m.weight)
                 nn.init.zeros_(m.bias)

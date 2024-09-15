@@ -24,7 +24,6 @@ TRAIN_SIZE = args.train_size
 # Hyperparameters
 BATCH_SIZE = args.batch_size
 NUM_EPOCHS = args.num_epochs
-NUM_EPOCHS_FOR_FINAL_MODEL = 10
 LEARNING_RATE = args.learning_rate
 RUN_KFOLD = args.run_kfold
 KFOLDS = args.k_folds

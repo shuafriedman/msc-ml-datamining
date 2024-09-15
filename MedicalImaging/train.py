@@ -4,6 +4,7 @@ from sklearn.model_selection import KFold
 from utils import load_images_from_folder, get_model, CustomImageDataset, load_images_for_test_data
 from config import *
 import pandas as pd
+from tqdm import tqdm
 
 def train_and_eval(model, dataloaders, model_name, fold, lr, num_classes: int, num_epochs: int = None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -22,7 +23,7 @@ def train_and_eval(model, dataloaders, model_name, fold, lr, num_classes: int, n
         train_correct = train_total = 0
         running_loss = 0.0
         
-        for inputs, labels in dataloaders['train']:
+        for inputs, labels in tqdm(dataloaders['train'], desc=f"Epoch {epoch + 1}/{NUM_EPOCHS} Training"):
             inputs, labels = inputs.to(device), labels.to(device)
             optimizer.zero_grad()
             outputs = model(inputs)
@@ -57,7 +58,9 @@ def train_and_eval(model, dataloaders, model_name, fold, lr, num_classes: int, n
             'model_name': model_name,
             'fold': fold + 1
         })
-
+        print(f"{model_name} "
+              f"Epoch {epoch+1}: Train Acc: {train_accuracy:.2f}%, Max Train Acc: {max_train_accuracy:.2f}%, "
+              f"Test Acc: {test_accuracy:.2f}%, Max Test Acc: {max_test_accuracy:.2f}%, Best Epoch: {best_epoch}")
     metrics_df = pd.DataFrame(metrics)
     return metrics_df, best_model_state
 
@@ -94,22 +97,20 @@ if __name__ == "__main__":
         all_labels.extend([label] * len(images))
 
     learning_rates = [0.001, 0.0001, 0.00001]
-    results = {}
     best_model_state_per_model = {}
     best_lr_per_model = {}
     best_results = []  # To store the best results per model
     all_metrics = []
 
     for model_name in MODELS:
+        print("Loading " + model_name)
         model = get_model(model_name=model_name, num_classes=len(image_dict))
         transforms = get_config_and_transforms(model)
 
-        max_val_acc_model = 0
-        best_model_state = None
-        best_lr = None
-        best_result = None
-
+        model_results = []  # Store results for each learning rate across all folds
+        
         for fold, (train_ids, test_ids) in enumerate(kfold.split(all_images)):
+            print("Testing fold " + str(fold))
             train_images, test_images = [all_images[i] for i in train_ids], [all_images[i] for i in test_ids]
             train_labels, test_labels = [all_labels[i] for i in train_ids], [all_labels[i] for i in test_ids]
             datasets = {
@@ -122,28 +123,34 @@ if __name__ == "__main__":
             }
 
             for lr in learning_rates:
+                print(f"Testing lr {lr} for fold {fold + 1}")
                 result, model_state = train_and_eval(model, dataloaders, model_name, fold, lr, num_classes=len(image_dict))
-                result.to_csv(f"results_{model_name}_fold_{fold+1}_lr_{lr}.csv", index=False)
-                all_metrics.append(result)
+                
+                # Collect results from each fold for averaging later
+                result['fold'] = fold + 1  # Mark fold in the result for tracking
+                model_results.append(result)
+        
+        # Once all folds are done for a model and each learning rate, average the results
+        model_results_df = pd.concat(model_results, ignore_index=True)
+        avg_results = model_results_df.groupby(['lr', 'model_name']).mean().reset_index()
 
-                avg_max_val_acc = result['max_test_accuracy'].mean()
-                if avg_max_val_acc > max_val_acc_model:
-                    max_val_acc_model = avg_max_val_acc
-                    best_model_state = model_state
-                    best_lr = lr
-                    best_result = result
-
-        best_model_state_per_model[model_name] = best_model_state
-        best_lr_per_model[model_name] = best_lr
+        # Track the best learning rate and its corresponding results
+        best_row = avg_results.loc[avg_results['max_test_accuracy'].idxmax()]
         best_results.append({
             'model_name': model_name,
-            'best_lr': best_lr,
-            'max_test_accuracy': max_val_acc_model,
-            'best_epoch': best_result['best_epoch'].max()
+            'best_lr': best_row['lr'],
+            'max_test_accuracy': best_row['max_test_accuracy'],
+            'best_epoch': best_row['best_epoch']
         })
-        torch.save(best_model_state, f"best_model_{model_name}_lr_{best_lr}.pth")
 
-    # Save all combined results
+        # Save the model with the best learning rate
+        best_model_state_per_model[model_name] = model_state
+        torch.save(best_model_state_per_model[model_name], f"best_model_{model_name}_lr_{best_row['lr']}.pth")
+
+        # Add the model's metrics to the overall results
+        all_metrics.append(avg_results)
+
+    # Save all results into one CSV
     all_metrics_df = pd.concat(all_metrics, ignore_index=True)
     all_metrics_df.to_csv("all_results.csv", index=False)
 
