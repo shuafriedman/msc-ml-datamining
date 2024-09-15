@@ -10,7 +10,6 @@ from config import TEST_DATA_PATH, HUGGINGFACE_MODELS, BATCH_SIZE
 from train import get_config_and_transforms
 from utils import get_model, CustomImageDataset
 from tqdm import tqdm
-from sklearn.metrics import accuracy_score
 
 # Set up basic logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -96,19 +95,17 @@ if __name__ == "__main__":
             for batch_idx, img_name in enumerate(image_files[i * BATCH_SIZE: (i + 1) * BATCH_SIZE]):
                 logging.info(f"Predictions for {img_name} with {model_name}: {predictions[batch_idx]} (True label: {labels[batch_idx]})")
 
-        # Convert true labels to integer indices for comparison
-        label_to_index = {label: idx for idx, label in enumerate(set(all_true_labels))}
-        all_true_labels_int = [label_to_index[label] for label in all_true_labels]
-
-        # Calculate accuracy
-        accuracy = accuracy_score(all_true_labels_int, all_predictions)
-        logging.info(f"Accuracy for {model_name}: {accuracy:.2f}")
+        # calculate the accuracy
+        correct = sum([1 for pred, true in zip(all_predictions, all_true_labels) if pred == true])
+        total = len(all_predictions)
+        accuracy = correct / total * 100
+        logging.info(f"Model {model_name} accuracy: {accuracy:.2f}%")
 
         # Create a DataFrame to store the image names, predictions, and true labels
         df = pd.DataFrame({
             'Image': image_names,
             'True Label': all_true_labels,
-            'Predicted Label': [list(label_to_index.keys())[pred] for pred in all_predictions]
+            'Predicted Label': all_predictions
         })
 
         # Export to CSV
