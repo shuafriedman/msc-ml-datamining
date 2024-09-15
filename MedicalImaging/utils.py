@@ -45,18 +45,26 @@ def load_images_from_folder(folder):
 def create_test_dataset(image_folder: str, transform):
     images = []
     image_files = []
+    labels = []
     
-    for img_name in os.listdir(image_folder):
-        img_path = os.path.join(image_folder, img_name)
-        img = Image.open(img_path).convert("RGB")  # Convert to RGB
-        
-        images.append(img)
-        image_files.append(img_name)
+    # Loop through the subfolders in the "test" folder
+    for label_name in os.listdir(image_folder):
+        label_folder = os.path.join(image_folder, label_name)
+        if os.path.isdir(label_folder):
+            # Loop through images in each label's folder
+            for img_name in os.listdir(label_folder):
+                img_path = os.path.join(label_folder, img_name)
+                img = Image.open(img_path).convert("RGB")  # Convert to RGB
+                
+                images.append(img)
+                image_files.append(img_name)
+                labels.append(label_name)  # Use folder name as the label
+
+    # Create the CustomImageDataset with the loaded images and their labels
+    dataset = CustomImageDataset(images, labels, transform)
     
-    # Creating a dummy label list for compatibility with CustomImageDataset
-    labels = [0] * len(images)  # Placeholder labels, not used in inference
-    
-    return CustomImageDataset(images, labels, transform), image_files
+    return dataset, image_files
+
 def get_model(model_name: str, num_classes: int):
     if model_name == 'resnet50':
         model = ResNetModel(num_classes)
