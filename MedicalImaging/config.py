@@ -29,7 +29,7 @@ RUN_KFOLD = args.run_kfold
 KFOLDS = args.k_folds
 # MODELS = ['resnet50', 'vgg16']
 MODELS = ['resnet50', 'vgg16', 'eva']
-HUGGINGFACE_MODELS = ['best_model_resnet50']
+HUGGINGFACE_MODELS = ['best_model_resnet50', 'best_model_vgg16', 'best_model_eva']
 TEST_DATA_PATH = "test"
 # Data transformations
 def get_transforms(mean=0.5, std=0.5, resize=(224, 224)):
