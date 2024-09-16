@@ -120,35 +120,41 @@ if __name__ == "__main__":
             )
         }
 
-        max_val_acc_model = 0
+        best_overall_test_accuracy = 0 
         best_model_state = None
         best_lr = None
         best_result = None
 
-        # Train and evaluate for each learning rate
+        # Loop over learning rates
         for lr in learning_rates:
             print(f"Starting training for lr: {lr}")
+            # Reinitialize the model for each learning rate
+            model = get_model(model_name=model_name, num_classes=len(image_dict))
             result, model_state = train_and_eval(model, dataloaders, model_name, lr, num_classes=len(image_dict))
             result.to_csv(f"results_{model_name}_lr_{lr}.csv", index=False)
             all_metrics.append(result)
 
-            # Calculate the average max test accuracy for each learning rate
-            avg_max_val_acc = result['max_test_accuracy'].mean()
-            if avg_max_val_acc > max_val_acc_model:
-                max_val_acc_model = avg_max_val_acc
+            # Get the maximum test accuracy achieved with this learning rate
+            max_test_accuracy = result['max_test_accuracy'].max()
+            
+            # If this is the highest accuracy so far, update the best model information
+            if max_test_accuracy > best_overall_test_accuracy:
+                best_overall_test_accuracy = max_test_accuracy
                 best_model_state = model_state
                 best_lr = lr
                 best_result = result
 
+        # Save the best model state and related information
         best_model_state_per_model[model_name] = best_model_state
         best_lr_per_model[model_name] = best_lr
         best_results.append({
             'model_name': model_name,
             'best_lr': best_lr,
-            'max_test_accuracy': max_val_acc_model,
+            'max_test_accuracy': best_overall_test_accuracy,
             'best_epoch': best_result['best_epoch'].max()
         })
         torch.save(best_model_state, f"best_model_{model_name}_lr_{best_lr}.pth")
+
 
     # Save all combined results
     all_metrics_df = pd.concat(all_metrics, ignore_index=True)
