@@ -97,7 +97,7 @@ if __name__ == "__main__":
         all_images.extend(images)
         all_labels.extend([label] * len(images))
 
-    learning_rates = [0.001, 0.0001, 0.00001]
+    learning_rates = [0.001, 0.0001]
     param_sizes = [128, 256]
     results = {}
     best_model_state_per_model = {}
