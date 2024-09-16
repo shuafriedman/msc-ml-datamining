@@ -90,9 +90,10 @@ def load_images_for_test_data(path: str):
                 image = image.convert('RGB')
             data.append(image)
             labels.append(folder)
+    # labels = np.array(labels)
+    # labels = np.where(labels == 'Covid', 2, labels)
+    # labels = np.where(labels == 'Normal', 1, labels)
+    # labels = np.where(labels == 'Viral Pneumonia', 0, labels)
     labels = np.array(labels)
-    labels = np.where(labels == 'Covid', 2, labels)
-    labels = np.where(labels == 'Normal', 1, labels)
-    labels = np.where(labels == 'Viral Pneumonia', 0, labels)
     labels = labels.astype(int)  # Ensure labels are integers
     return {"data": data, "labels": labels}
