@@ -72,8 +72,6 @@ def get_model(model_name: str, num_classes: int):
         model = VGGModel(num_classes)
     elif model_name == 'eva':
         model = Eva(num_classes)
-    elif model_name == "vit":
-        model = Vit(num_classes)
     else:
         raise ValueError(f"Model {model_name} not supported")
     return model
