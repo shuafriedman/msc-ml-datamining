@@ -140,11 +140,10 @@ if __name__ == "__main__":
                 all_metrics.append(result)
 
                 # Get the maximum test accuracy achieved with this learning rate
-                max_test_accuracy = result['max_test_accuracy'].max()
-                
-                # If this is the highest accuracy so far, update the best model information
-                if max_test_accuracy > best_overall_test_accuracy:
-                    best_overall_test_accuracy = max_test_accuracy
+                current_test_accuracy = result['test_accuracy'].iloc[-1]  # Test accuracy of the last epoch
+                # If the current test accuracy is the highest so far, update the best model information
+                if current_test_accuracy > best_overall_test_accuracy:                
+                    best_overall_test_accuracy = current_test_accuracy
                     best_model_state = model_state
                     best_lr = lr
                     best_param_size = param_size
