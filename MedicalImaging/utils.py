@@ -7,7 +7,7 @@ import os
 from PIL import Image
 from config import BATCH_SIZE
 import numpy as np
-from model import ResNetModel, VGGModel, Eva, Vit
+from model import ResNetModel, VGGModel, Eva
 class CustomImageDataset(Dataset):
     def __init__(self, images, labels, transform=None):
         self.images = images

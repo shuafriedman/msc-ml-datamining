@@ -8,7 +8,7 @@ from tqdm import tqdm
 def train_and_eval(model, dataloaders, model_name, lr, param_size, num_classes: int, num_epochs: int = None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=lr, param_size=param_size)
+    optimizer = optim.Adam(model.parameters(), lr=lr)
     model = model.to(device)
     metrics = []
 
