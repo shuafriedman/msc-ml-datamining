@@ -67,33 +67,14 @@ class Eva(nn.Module):
         in_features = self.model.head.in_features
          
         self.model.head= nn.Sequential(
-                                nn.Linear(in_features, num_classes)
-                                )
-        for m in self.model.head.modules():
-            if isinstance(m, nn.Linear):
-                nn.init.xavier_uniform_(m.weight)
-                nn.init.zeros_(m.bias)
-    def forward(self, x):
-        return self.model(x)
-
-class Vit(nn.Module):
-    def __init__(self, num_classes: int, freeze_features: bool = True):
-        super(Vit, self).__init__()
-        self.model = timm.create_model('vit_base_patch16_224', pretrained=True)
-        self.config= timm.data.resolve_model_data_config(self.model)
-
-        if freeze_features:
-            for param in self.model.parameters():
-                param.requires_grad = False
-        in_features = self.model.head.in_features
-         
-        self.model.head = nn.Sequential(
-            nn.Linear(in_features, num_classes)
+                                nn.Linear(in_features, 256), 
+                                nn.ReLU(),
+                                nn.Dropout(0.3), 
+                                nn.Linear(256, num_classes)
         )
         for m in self.model.head.modules():
             if isinstance(m, nn.Linear):
                 nn.init.xavier_uniform_(m.weight)
                 nn.init.zeros_(m.bias)
-
     def forward(self, x):
         return self.model(x)
