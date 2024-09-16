@@ -5,10 +5,10 @@ from config import *
 import pandas as pd
 from tqdm import tqdm
 
-def train_and_eval(model, dataloaders, model_name, lr, num_classes: int, num_epochs: int = None):
+def train_and_eval(model, dataloaders, model_name, lr, param_size, num_classes: int, num_epochs: int = None):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=lr)
+    optimizer = optim.Adam(model.parameters(), lr=lr, param_size=param_size)
     model = model.to(device)
     metrics = []
 
@@ -54,9 +54,11 @@ def train_and_eval(model, dataloaders, model_name, lr, num_classes: int, num_epo
             'best_epoch': best_epoch,
             'train_loss': train_loss,
             'lr': lr,
+            'param_size': param_size,
             'model_name': model_name
         })
         print(f"{model_name} "
+              f"LR: {lr}, Param Size: {param_size}, "
               f"Epoch {epoch+1}: Train Acc: {train_accuracy:.2f}%, Max Train Acc: {max_train_accuracy:.2f}%, "
               f"Test Acc: {test_accuracy:.2f}%, Max Test Acc: {max_test_accuracy:.2f}%, Best Epoch: {best_epoch}")
     metrics_df = pd.DataFrame(metrics)
@@ -96,9 +98,11 @@ if __name__ == "__main__":
         all_labels.extend([label] * len(images))
 
     learning_rates = [0.001, 0.0001, 0.00001]
+    param_sizes = [128, 256]
     results = {}
     best_model_state_per_model = {}
     best_lr_per_model = {}
+    best_param_size_per_model = {}
     best_results = []  # To store the best results per model
     all_metrics = []
 
@@ -123,43 +127,47 @@ if __name__ == "__main__":
         best_overall_test_accuracy = 0 
         best_model_state = None
         best_lr = None
+        best_param_size = None
         best_result = None
 
         # Loop over learning rates
         for lr in learning_rates:
-            print(f"Starting training for lr: {lr}")
-            # Reinitialize the model for each learning rate
-            model = get_model(model_name=model_name, num_classes=len(image_dict))
-            result, model_state = train_and_eval(model, dataloaders, model_name, lr, num_classes=len(image_dict))
-            result.to_csv(f"results_{model_name}_lr_{lr}.csv", index=False)
-            all_metrics.append(result)
+            for param_size in param_sizes:
+                print(f"Starting training for lr: {lr} and param_size: {param_size}")
+                # Reinitialize the model for each learning rate
+                model = get_model(model_name=model_name, num_classes=len(image_dict))
+                result, model_state = train_and_eval(model, dataloaders, model_name, lr, param_size, num_classes=len(image_dict))
+                all_metrics.append(result)
 
-            # Get the maximum test accuracy achieved with this learning rate
-            max_test_accuracy = result['max_test_accuracy'].max()
-            
-            # If this is the highest accuracy so far, update the best model information
-            if max_test_accuracy > best_overall_test_accuracy:
-                best_overall_test_accuracy = max_test_accuracy
-                best_model_state = model_state
-                best_lr = lr
-                best_result = result
+                # Get the maximum test accuracy achieved with this learning rate
+                max_test_accuracy = result['max_test_accuracy'].max()
+                
+                # If this is the highest accuracy so far, update the best model information
+                if max_test_accuracy > best_overall_test_accuracy:
+                    best_overall_test_accuracy = max_test_accuracy
+                    best_model_state = model_state
+                    best_lr = lr
+                    best_param_size = param_size
+                    best_result = result
 
         # Save the best model state and related information
         best_model_state_per_model[model_name] = best_model_state
         best_lr_per_model[model_name] = best_lr
+        best_param_size_per_model[model_name] = best_param_size
         best_results.append({
             'model_name': model_name,
             'best_lr': best_lr,
+            'best_param_size': best_param_size,
             'max_test_accuracy': best_overall_test_accuracy,
             'best_epoch': best_result['best_epoch'].max()
         })
-        torch.save(best_model_state, f"best_model_{model_name}_lr_{best_lr}.pth")
+        torch.save(best_model_state, f"test_results/best_model_{model_name}.pth")
 
 
     # Save all combined results
     all_metrics_df = pd.concat(all_metrics, ignore_index=True)
-    all_metrics_df.to_csv("all_results.csv", index=False)
+    all_metrics_df.to_csv("test_results/all_results.csv", index=False)
 
     # Save only the best models and their parameters
     best_results_df = pd.DataFrame(best_results)
-    best_results_df.to_csv("best_models.csv", index=False)
+    best_results_df.to_csv("test_results/best_models.csv", index=False)
