@@ -28,6 +28,20 @@ def load_model_from_hf(repo_name: str):
 
 # Updated create_test_dataset function to include folder labels
 def create_test_dataset(image_folder: str, transform):
+    
+    if not os.path.exists(image_folder):
+        raise FileNotFoundError('Folder named "test" in current directory not found')
+        
+    else:
+        # Check for folders '0', '1', and '2' inside the 'test' folder
+        expected_folders = ['0', '1', '2']
+        missing_folders = [folder for folder in expected_folders if not os.path.exists(os.path.join(image_folder, folder))]
+
+        if missing_folders:
+            raise FileNotFoundError(f"Folders not found: {', '.join(missing_folders)}")
+        else:
+            print("All folders (0, 1, 2) are found")
+
     images = []
     image_files = []
     labels = []
@@ -60,6 +74,9 @@ if __name__ == "__main__":
     logging.info("Starting inference script.")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logging.info(f"Using device: {device}")
+
+    # Dictionary to store model accuracies
+    model_accuracies = {}
 
     # Load models from Hugging Face
     for model_repo in HUGGINGFACE_MODELS:
@@ -105,8 +122,10 @@ if __name__ == "__main__":
         total = len(all_predictions)
         accuracy = correct / total * 100 if total > 0 else 0
 
-        logging.info(f"Model {model_name} accuracy: {accuracy:.2f}%")
+        # Store accuracy in dictionary
+        model_accuracies[model_name] = accuracy
 
+        logging.info(f"Model {model_name} accuracy: {accuracy:.2f}%")
 
         # Create a DataFrame to store the image names, predictions, and true labels
         df = pd.DataFrame({
@@ -120,4 +139,13 @@ if __name__ == "__main__":
         df.to_csv(csv_filename, index=False)
         logging.info(f"Results saved to {csv_filename}")
 
-    logging.info("Inference script completed.")
+    # Summarize results and find the model with the best accuracy
+    logging.info("Inference completed for all models.")
+    best_model = max(model_accuracies, key=model_accuracies.get)
+    logging.info("\nSummary of Model Accuracies:")
+    for model, acc in model_accuracies.items():
+        print(f"{model}: {acc:.2f}% accuracy")
+    
+    print(f"\nBest model: {best_model} with accuracy: {model_accuracies[best_model]:.2f}%")
+
+    print("Inference script completed.")
